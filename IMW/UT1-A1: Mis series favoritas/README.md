@@ -24,7 +24,7 @@ En nuestro caso ya tenemos creado un fichero llamado `alu3175` en la ruta `/etc/
 
 - Una ve aquí  despues del ultimo corchete tendremos que crear otro server que nosotros lo llamaremos `alu3175.me` con el *root* `/home/alu3175`
 - EL siguiente paso sera el *location* que lo llamaremos `/series` esta sera nuestra carpeta que contendra el index.html con sus imágenes.
-- Quedara algo así:
+- Quedará algo así:
 
   ![server](./images/2.png)
 
