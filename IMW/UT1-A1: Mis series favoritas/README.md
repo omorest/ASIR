@@ -10,7 +10,7 @@ Enlace a mi página de [My favourite series](http://alu3175.me/series)
 
 ## 2. Procedimiento
 
-En nuestro caso ya tenemos creado un fichero llamado `alu3175` en la ruta `/etc/nginx/sites-enabled/` que es donde tenemos nuestro virtual host de [blog](http://alu3175.alu3175.me/webapps/blog/) enlazada a `/etc/nginx/sites-aviable/`. Por lo que nosotros aprovecharemos para crear otro server dentro de este fichero.
+En nuestro caso ya tenemos creado un fichero llamado `alu3175` en la ruta `/etc/nginx/sites-enabled/` que es donde tenemos nuestro virtual host de [blog](http://alu3175.alu3175.me/webapps/blog/) enlazada a `/etc/nginx/sites-available/`. Por lo que nosotros aprovecharemos para crear otro server dentro de este fichero.
 
 ### 2.1 Creación server
 
@@ -34,7 +34,7 @@ En nuestro caso ya tenemos creado un fichero llamado `alu3175` en la ruta `/etc/
 
 - Nuestro siguiente paso será crear la carpeta *series* con todo lo necesario (index e imágenes) para crear nuestra web.
 
-- Una forma mas sencilla para no estar trabajando directamente sobre el servidor y hacer tantas modificaciones es hacer nuestra carpeta con su index en nuestro PC con un editor html, [Brackets](http://brackets.io/) en mi caso para hacer todaslas pruebas necesarias hasta tener la web completa y así ya despues subir la carpeta entera a nuestro servidor.
+- Una forma mas sencilla para no estar trabajando directamente sobre el servidor y hacer tantas modificaciones es hacer nuestra carpeta con su index en nuestro PC con un editor html, [Brackets](http://brackets.io/) en mi caso para hacer todas las pruebas necesarias hasta tener la web completa y así ya despues subir la carpeta entera a nuestro servidor.
 
 - Para esto cuando tengamos la carpeta con todo usamos el comando `scp -r /home/oscar/Documentos/series/ alu3175@alu3175.me:/home/alu3175`.
 
@@ -47,4 +47,4 @@ En nuestro caso ya tenemos creado un fichero llamado `alu3175` en la ruta `/etc/
 
   - Con esto nos evitamos estar modificando directamente en el servidor y que sea visible para la gente sin estar terminado nuestra web.
 
-Con Esto estará finalizada la práctica y tendremos nuestra web preparada http://alu3175.me/serie 
+Con Esto estará finalizada la práctica y tendremos nuestra web preparada http://alu3175.me/serie
