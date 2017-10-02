@@ -47,4 +47,4 @@ En nuestro caso ya tenemos creado un fichero llamado `alu3175` en la ruta `/etc/
 
   - Con esto nos evitamos estar modificando directamente en el servidor y que sea visible para la gente sin estar terminado nuestra web.
 
-Con Esto estará finalizada la práctica y tendremos nuestra web preparada http://alu3175.me/serie
+Con esto estará finalizada la práctica y tendremos nuestra web preparada http://alu3175.me/serie
