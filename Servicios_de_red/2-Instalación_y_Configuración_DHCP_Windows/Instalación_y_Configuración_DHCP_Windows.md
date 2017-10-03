@@ -20,6 +20,8 @@ Usaremos máquinas ya creadas y preparadas de la práctica anterior. [Instalaci�
 - Windows server 2012
 - Windows 10 (cliente)
 
+___
+
 ## 2. Instalación DHCP
 
 - Dentro del `Administrador del servidor` entraremos en `Agregar roles y características`.
@@ -46,8 +48,10 @@ Usaremos máquinas ya creadas y preparadas de la práctica anterior. [Instalaci�
 
   ![6](./images/6.png)
 
+  ___
+
 ## 3. Configuración DHCP
 
 Para entrar en la configuración del *DHCP* iremos al `Administrador del servidor` en `Herramientas` y la opción `DHCP`
 
-![7](./images/7.png)
+![7](./images/9.png)
