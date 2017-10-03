@@ -19,3 +19,35 @@ Usaremos máquinas ya creadas y preparadas de la práctica anterior. [Instalaci�
 
 - Windows server 2012
 - Windows 10 (cliente)
+
+## 2. Instalación DHCP
+
+- Dentro del `Administrador del servidor` entraremos en `Agregar roles y características`.
+
+  ![1](./images/1.png)
+
+- Ahora daremos a siguiente hasta llegar a `Roles del servidor` y aqui dentro activaremos la opción `Servidor DHCP` .
+
+  ![2](./images/2.png)
+
+- Una vez activado seguiremos hasta llegar a `Resultados` donde instalaremos.
+
+  ![3](./images/3.png)
+
+- Cuando ya este instalado nos saldrá una opción llamada `Completar configuración DHCP` y clicaremos ahí.
+
+  ![4](./images/4.png)
+
+- Ya dentro de esta configuracion estaremos en el apartado llamado `Autorización` en el que activaremos la primera casilla para usar las credenciales del servidor.
+
+  ![5](./images/5.png)
+
+- Luego de esto daremos a confirmar y seguiremos hasta finalizar y cerrar esta ventana.
+
+  ![6](./images/6.png)
+
+## 3. Configuración DHCP
+
+Para entrar en la configuración del *DHCP* iremos al `Administrador del servidor` en `Herramientas` y la opción `DHCP`
+
+![7](./images/7.png)
