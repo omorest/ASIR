@@ -22,6 +22,8 @@ Usaremos máquinas ya creadas y preparadas de la práctica anterior. [Instalaci�
 
 ___
 
+___
+
 ## 2. Instalación DHCP
 
 - Dentro del `Administrador del servidor` entraremos en `Agregar roles y características`.
