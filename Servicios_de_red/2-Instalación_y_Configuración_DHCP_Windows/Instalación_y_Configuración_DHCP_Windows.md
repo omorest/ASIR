@@ -171,6 +171,8 @@ El superámbito consiste en agrupar a todos los ámbitos que queramos y asi pode
 
   ![12.3a](./images/12.3.png)
 
+  ___
+
 Ahora veremos que tenemos un `superámbito`  creado con sus ámbitos dentro de él.
 
 ![12.5](./images/12.5.png)
@@ -193,6 +195,7 @@ Veremos que nos detecta de nuevo la IP
 
 ![12.9](./images/12.9.png)
 
+___
 
 
 Con esto la práctica esta acabada.
