@@ -52,6 +52,8 @@ ___
 
   ___
 
+  ___
+
 ## 3. Configuración DHCP
 
 Para entrar en la configuración del *DHCP* iremos al `Administrador del servidor` en `Herramientas` y la opción `DHCP`
