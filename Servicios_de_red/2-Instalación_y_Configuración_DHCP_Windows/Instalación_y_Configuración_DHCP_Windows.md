@@ -6,7 +6,7 @@ ___
 
 Esta práctica consistirá en crear y configurar (Creación de ámbitos, reservas, exclusiones, etc..) el servicio *DHCP* en *Windows server 2012* para que nuestro cliente *Windows 10* obtenga ip automáticamente.
 
-__
+___
 
 Entrega de la práctica:
 
