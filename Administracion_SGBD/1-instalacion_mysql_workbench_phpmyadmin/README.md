@@ -46,7 +46,7 @@ Lo primero que debemos hacer antes de instalar el *Mysql* junto a *Workbench* se
 4. Instalamos y terminado.
 
 
-## 2.1.2 MySQL community
+### 2.1.2 MySQL community
 
 Instalaremos el *MySQL community* ya que este nos instalará el MySQL junto al Workbench.
 
