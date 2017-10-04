@@ -24,9 +24,9 @@ En este caso he realizado la práctica con una máquina con el sistema operativo
 Tener en cuenta desactivar los *firewall*
 
 
-# 2. MySQL y Workbench
+# 2. MySQL y Workbench (MySQL community)
 
-Usaremos una versión llamada *MySQL community* que nos traera tanto el MySQL como el Workbench.
+Usaremos una versión llamada *MySQL community* que nos traera tanto el MySQL como el Workbench cuando se elija la opción *Developer* cuando estemos instalando.
 
 
 ## 2.1 Instalación
@@ -48,7 +48,7 @@ Lo primero que debemos hacer antes de instalar el *Mysql* junto a *Workbench* se
 
 ### 2.1.2 MySQL community
 
-Instalaremos el *MySQL community* ya que este nos instalará el MySQL junto al Workbench.
+Instalaremos el *MySQL community* ya que este nos instalará el MySQL junto al Workbench cuando elijamos la opción *Developer*.
 
 Para descargarlo iremos al [enlace](https://dev.mysql.com/downloads/windows/installer/5.7.html) de *MySQL community* y descargaremos la version de 64 bits en nuestro caso.
 
@@ -92,3 +92,28 @@ Una vez descargado el instalador procederemos a instalarlo.
   ![2.8](./img/2.7.png)
 
 - Finalmente daremos todo siguiente hasta terminar.
+
+### Servicio MySQL
+
+Instalado todo veremos que el servicio estará activo.
+
+Una de las formas es ir a los servicios y ahi lo veremos.
+
+  ![3](./img/3.png)
+
+### Workbench
+
+Una vez instalado el *MySQL community* lo abriremos para comprobar que esta todo correcto.
+
+
+### Ubicación archivos
+
+Cuando hemos instalado todo se nos creara carpetas con los archivos de configuración y directorios.
+
+  ![2.3](./img/3.4.png)
+
+  ![2.3](./img/3.5.png)
+
+  ![2.3](./img/3.6.png)
+
+## Configuración acceso remoto
