@@ -53,7 +53,7 @@ Instalaremos el *MySQL community* ya que este nos instalará el MySQL junto al W
 Para descargarlo iremos al [enlace](https://dev.mysql.com/downloads/windows/installer/5.7.html) de *MySQL community* y descargaremos la version de 64 bits en nuestro caso.
 
 
-#### Instalación:
+### Instalación:
 
 Una vez descargado el instalador procederemos a instalarlo.
 
