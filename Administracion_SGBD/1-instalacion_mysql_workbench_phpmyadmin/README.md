@@ -146,11 +146,13 @@ Pasos a seguir :
 
 - Después de esto volvemos a ir al panel de la izquierda e ir al apartado 'Users and privileges'.
 
-  ![4.2](./img/4.2.png)
+  ![4.3](./img/4.3.png)
 
 - Aquí le daremos a `Add account` para añadir un nuevo usuario con su contraseña.
 
   ![4.4](./img/4.4.png)
+
+  ![4.5](./img/4.5.png)
 
 -  En mi caso cree un usuario llamado *oscar*.
 
@@ -163,4 +165,4 @@ ___
 
 # 3. XAMPP
 
-El *XAMPP* lo utilizaremos para tener el servidor *apache* y aparte el *phpMyAdmin*. 
+El *XAMPP* lo utilizaremos para tener el servidor *apache* y aparte el *phpMyAdmin*.
