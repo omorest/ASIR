@@ -1,6 +1,6 @@
 # Instalación MySQL, Workbench y pfpMyAdmind
 
-![portada](/img/portada.png)
+![portada](./img/portada.png)
 
 ___
 
