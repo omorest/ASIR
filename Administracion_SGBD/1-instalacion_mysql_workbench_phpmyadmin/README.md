@@ -69,7 +69,7 @@ Una vez descargado el instalador procederemos a instalarlo.
 
 - Pasaremos a la instalación y nos saldrá una lista de todos los productos que se instalarán, le daremos abajo a `execute`.
 
-  ![2.2](./img/2.2png)
+  ![2.2](./img/2.2.png)
 
 - Veremos que se ponen todos en verde lo que quiere decir que todas las intalaciones se han hecho correctamente.
 
