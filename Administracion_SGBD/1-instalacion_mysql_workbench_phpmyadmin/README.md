@@ -23,6 +23,8 @@ En este caso he realizado la práctica con una máquina con el sistema operativo
 
 Tener en cuenta desactivar los *firewall*
 
+___
+___
 
 # 2. MySQL y Workbench (MySQL community)
 
@@ -93,6 +95,9 @@ Una vez descargado el instalador procederemos a instalarlo.
 
 - Finalmente daremos todo siguiente hasta terminar.
 
+___
+
+
 ### Servicio MySQL
 
 Instalado todo veremos que el servicio estará activo.
@@ -101,10 +106,14 @@ Una de las formas es ir a los servicios y ahi lo veremos.
 
   ![3](./img/3.png)
 
+  ___
+
 ### Workbench
 
 Una vez instalado el *MySQL community* lo abriremos para comprobar que esta todo correcto.
 
+
+___
 
 ### Ubicación archivos
 
@@ -115,5 +124,8 @@ Cuando hemos instalado todo se nos creara carpetas con los archivos de configura
   ![2.3](./img/3.5.png)
 
   ![2.3](./img/3.6.png)
+
+
+  ___
 
 ## Configuración acceso remoto
