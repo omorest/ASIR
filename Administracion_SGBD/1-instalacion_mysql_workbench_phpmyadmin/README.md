@@ -52,9 +52,43 @@ Instalaremos el *MySQL community* ya que este nos instalará el MySQL junto al W
 
 Para descargarlo iremos al [enlace](https://dev.mysql.com/downloads/windows/installer/5.7.html) de *MySQL community* y descargaremos la version de 64 bits en nuestro caso.
 
+![1](./img/1.png)
+
 
 ### Instalación:
 
 Una vez descargado el instalador procederemos a instalarlo.
 
-- Lo primero
+- Lo primero será ejecutar el instalador y nos aparecerá una pantalla así y le daremos a `Next`
+
+  ![2](./img/2-instalacion.png)
+
+- Luego eligiremos la opción `Developer Default` que nos instalará los productos de *MySQL* en nuestro caso para tener el *Workbench* también.
+
+  ![2.1](./img/2.1.png)
+
+- Pasaremos a la instalación y nos saldrá una lista de todos los productos que se instalarán, le daremos abajo a `execute`.
+
+  ![2.2](./img/2.2png)
+
+- Veremos que se ponen todos en verde lo que quiere decir que todas las intalaciones se han hecho correctamente.
+
+  ![2.3](./img/2.3.png)
+
+- Al darle a 'Next' veremos que iremos a otro modo de instlación en el que eligiremos la primera opción `Standalone MySQL Server / Classic MySQL Replication` .
+
+  ![2.4](./img/2.4.png)
+
+- Pasaremos a una configuración de la opción elegida anteriormente que deberemos tener de esta manera:
+
+  ![2.5](./img/2.5.png)
+
+- Seguiremos hasta llegar a `Windows Service`  en el que tendremos que tener el nombre del servidor por defecto y activas las opciones que vemos.
+
+  ![2.6](./img/2.6.png)
+
+- Daremos siguiente y estaremos en `Plugins and Extensions` y lo dejaremos sin nada activado.
+
+  ![2.8](./img/2.7.png)
+
+- Finalmente daremos todo siguiente hasta terminar.
