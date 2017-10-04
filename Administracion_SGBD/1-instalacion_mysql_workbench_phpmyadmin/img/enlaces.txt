@@ -1,2 +1,0 @@
-enlace  visual http://download.microsoft.com/download/9/7/C/97C609E9-EBD3-466B-A87E-FA7F7BF1B000/vcredist_x64.exe
-enlace descarga mysql : https://dev.mysql.com/downloads/windows/installer/5.7.html

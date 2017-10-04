@@ -119,13 +119,23 @@ ___
 
 Cuando hemos instalado todo se nos creara carpetas con los archivos de configuración y directorios.
 
-  ![2.3](./img/3.4.png)
+  ![3.4](./img/3.4.png)
 
-  ![2.3](./img/3.5.png)
+  ![3.5](./img/3.5.png)
 
-  ![2.3](./img/3.6.png)
+  ![3.6](./img/3.6.png)
 
 
   ___
 
-## Configuración acceso remoto
+## 2.2 Configuración acceso remoto
+
+En esta parte lo que haremos sera confirar el workbench para que con usuarios podamos acceder desde otro ordenador de forma remota.
+
+Pasos a seguir :
+
+- Abrir *Workbench* y dentro de el ir al panel izquierdo y entrar en `Options file` y `Networking` dentro de él.
+
+  ![4](./img/4.png)
+
+- 
