@@ -95,7 +95,7 @@ En este proceso nos puede pedir una contraseña *root*  asi que le pondremos la 
 
 - Daremos siguiente y estaremos en `Plugins and Extensions` y lo dejaremos sin nada activado.
 
-  ![2.8](./img/2.7.png)
+  ![2.7](./img/2.7.png)
 
 - Finalmente daremos todo siguiente hasta terminar.
 
@@ -181,7 +181,7 @@ Una vez descargado el instalador procederemos a la instalacion.
 
   ![5.1](./img/5.1.png)
 
-- seguiremos con la instalación por defecto y listo, con esto tendremos instalado el *XAMPP* con los componentes que necesitamos.
+- Seguiremos con la instalación por defecto y listo, con esto tendremos instalado el *XAMPP* con los componentes que necesitamos.
 
 ___
 
