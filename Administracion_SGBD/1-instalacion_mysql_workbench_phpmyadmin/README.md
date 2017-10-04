@@ -61,6 +61,8 @@ Para descargarlo iremos al [enlace](https://dev.mysql.com/downloads/windows/inst
 
 Una vez descargado el instalador procederemos a instalarlo.
 
+En este proceso nos puede pedir una contraseña *root*  asi que le pondremos la contraseña que nosotros queramos.
+
 - Lo primero será ejecutar el instalador y nos aparecerá una pantalla así y le daremos a `Next`
 
   ![2](./img/2-instalacion.png)
@@ -134,8 +136,31 @@ En esta parte lo que haremos sera confirar el workbench para que con usuarios po
 
 Pasos a seguir :
 
-- Abrir *Workbench* y dentro de el ir al panel izquierdo y entrar en `Options file` y `Networking` dentro de él.
+- Abrir *Workbench* y dentro de el ir al panel izquierdo y entrar en `Options file` y `Networking` dentro de él y activaremos abajo la casilla `bind-address` y aplicaremos el cambio.
 
   ![4](./img/4.png)
 
-- 
+- Luego de esto saldra una pantallita como esta que sera para confirmar el cambio.
+
+  ![4.1](./img/4.1.png)
+
+- Después de esto volvemos a ir al panel de la izquierda e ir al apartado 'Users and privileges'.
+
+  ![4.2](./img/4.2.png)
+
+- Aquí le daremos a `Add account` para añadir un nuevo usuario con su contraseña.
+
+  ![4.4](./img/4.4.png)
+
+-  En mi caso cree un usuario llamado *oscar*.
+
+  ![4.3](./img/4.3.png)
+
+Con esto estará todo listo para poder entrar desde otro PC de forma remota al nuestro en el que abra que poner la IP del ordenador al que nos queremos conectar el nombre del usuario y la contraseña.
+
+___
+___
+
+# 3. XAMPP
+
+El *XAMPP* lo utilizaremos para tener el servidor *apache* y aparte el *phpMyAdmin*. 
