@@ -33,7 +33,7 @@ Usaremos una versión llamada *MySQL community* que nos traera tanto el MySQL co
 
 Lo primero que debemos hacer antes de instalar el *Mysql* junto a *Workbench* sera instalar el ***visual c++*** así tendremos los requisitos cumplidos antes de instalar el resto.
 
-### Visual c++
+### 2.1.1 Visual c++
 
 1. Entrar en [visual c++](https://support.microsoft.com/en-us/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package)
 
@@ -46,7 +46,7 @@ Lo primero que debemos hacer antes de instalar el *Mysql* junto a *Workbench* se
 4. Instalamos y terminado.
 
 
-## MySQL community
+## 2.1.2 MySQL community
 
 Instalaremos el *MySQL community* ya que este nos instalará el MySQL junto al Workbench.
 
