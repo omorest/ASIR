@@ -1,3 +1,5 @@
+Óscar Moreira 2ºASIR
+
 # Instalación MySQL, Workbench y pfpMyAdmind
 
 ![portada](./img/portada.png)
@@ -156,7 +158,7 @@ Pasos a seguir :
 
 -  En mi caso cree un usuario llamado *oscar*.
 
-  ![4.3](./img/4.3.png)
+    ![4.4](./img/4.4.png)
 
 Con esto estará todo listo para poder entrar desde otro PC de forma remota al nuestro en el que abra que poner la IP del ordenador al que nos queremos conectar el nombre del usuario y la contraseña.
 
@@ -166,3 +168,79 @@ ___
 # 3. XAMPP
 
 El *XAMPP* lo utilizaremos para tener el servidor *apache* y aparte el *phpMyAdmin*.
+
+Para instalar el *XAMPP* iremos al [enlace oficial](https://www.apachefriends.org/es/download.html) de *XAMPP* y aqui dentro eligeremos la versión que nosotros queramos pero en nuestro caso usamos la última (7.1.9 / PHP 7.1.9).
+
+  ![5](./img/5.png)
+
+Una vez descargado el instalador procederemos a la instalacion.
+
+### Instalación
+
+- Ejecutaremos el instalador y seguiremos dejando las opcionespor defecto hasta llegar a un apartado llamado `Select components`,  en este solo habrá que marcar las opciones `apache, php y phpMyAdmin `.
+
+  ![5.1](./img/5.1.png)
+
+- seguiremos con la instalación por defecto y listo, con esto tendremos instalado el *XAMPP* con los componentes que necesitamos.
+
+___
+
+### Configuración phpMyAdmin
+
+
+Ahora lo que debemos hacer es configurar el *phpMyAdmin* para que tenga relación con el servidor *MySQL*.
+
+Pasos a seguir:
+
+- Lo primero que haremos será ir a la ruta `disco local C:/xampp/phpMyAdmin`, aqui dentro hay un fichero llamado `config.inc.php` .
+
+  ![php1](./img/PHP1.png)
+
+- Lo abriremos en nuestro caso con la aplicación *wordpad*.
+
+- Una vez dentro de él viendo su información, iremos a un apartadollamado *authentication* en el que hay que poner la contraseña de root que pusimos cuando instalamos el *MySQL*
+
+  ![php2](./img/PHP2.png)
+
+- Cuando ya este puesto esto lo guardaremos y saldremos, abriremos el navegador y pondremos `localhost/phpmyadmin`, si entra en la página veremos que nos entra pero saldran errores, esto es porque aún no hemos terminado la configuración pero ya esta asociado al *MySQL* nuestro.
+
+  ![php3](./img/php3.png)
+
+- Ahora iremos a la ruta `disco local C:/xampp/phpMyAdmin/sql` y nos encontraremos un archivo llamado `create_tables.sql` que abriremos.
+
+  ![php5](./img/php5.png)
+
+- Copiaremos todo y lo pegaremos en una ventana del *Workbench* . También dejaré el código por aqui para poder copiarlo también.
+
+~~~
+Código a copiar:
+
+~~~
+
+  ![php6](./img/php6.png)
+
+- Actualizamos el apartado del panel izquierdo llamado `SCHEMAS` y nos saldra la base de datos.
+
+  ![php7](./img/php7.png)
+
+- Abriremos otra ventana sql en workbench y pondremos el siguiente código.
+
+  ~~~
+  CREATE USER 'pma'@'localhost' IDENTIFIED BY 'pmapass';
+  GRANT ALL PRIVILEGES ON `phpmyadmin`.* TO 'pma'@'localhost' WITH GRANT OPTION;
+  FLUSH PRIVILEGES;
+  ~~~
+
+  ![php9](./img/php9.png)
+
+- Después de hacer esto iremos de nuevo al archivo `config.inc.php` y dentro iremos a un apartado llamado `User for advanced features` en el que tendremos que poner la contraseña que pusimos en el apartado anterior.
+
+  ![php10](./img/php10.png)
+
+Con esto la práctica estará finalizada y veremos que si volvemos al navegador  y ponemos `localhost/phpmyadmin` ahora no nos saldrá ningun error y eso quiere decir que estara todo correcto.
+
+  ![php11](./img/php11.png)
+
+___
+
+Fin de la práctica
