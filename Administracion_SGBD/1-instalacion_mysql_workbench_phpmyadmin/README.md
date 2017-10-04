@@ -15,6 +15,6 @@ Entraga de la práctica:
 
 ___
 
-## 1. Máquina virtual
+# 1. Máquina virtual
 
 En este caso he realizado la práctica con una máquina con el sistema operativo `Windows 10`.
