@@ -4,9 +4,9 @@
 
 ___
 
-Esta práctica consiste en instalar en nuestra máquina Windows el *MySQL*, *Workbench* y *phpMyAdmin* con el XAMPP.
+1. Esta práctica consiste en instalar en nuestra máquina Windows el *MySQL*, *Workbench* y *phpMyAdmin* con el XAMPP.
 
-Haremos también la configuración para conexiones remotas del *Workbench*.
+2. Haremos también la configuración para conexiones remotas del *Workbench*.
 
 ___
 
