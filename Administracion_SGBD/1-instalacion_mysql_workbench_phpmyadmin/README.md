@@ -175,6 +175,34 @@ Pasos a seguir :
 Con esto estará todo listo para poder entrar desde otro PC de forma remota al nuestro en el que abra que poner la IP del ordenador al que nos queremos conectar el nombre del usuario y la contraseña.
 
 ___
+### 2.2.1 Prueba de conexión remota
+
+Para probar la conexión se ha hecho desde otro PC y veremos las capturas hechas haciendo la conexión desde el otro PC.
+
+1. Lo primero iremos al *Workbench* y clicaremos donde hay un (+) a la derecha de `MySQL Connections`.
+
+  ![1](./img/acceso1.png)
+
+2. Nos saldrá esta ventana en la que pondremos lo siguiente:
+
+  - Connection Name: (puede ir cualquier nombre)
+
+  - Hostname: IP del Pc al que nos queremos conectar
+  - Username: nombre del usuario creado para la conexión remota
+
+    ![2](./img/acceso2.png)
+
+3. Luego de poner esto clicaremos en `Store in Vault` para poner la contraseña del usuario al que nos vamos a conectar.
+
+  ![3](./img/acceso3.png) ___
+
+4. Después daremos a `Test Connection`  y ya estara listo en el home nos saldra la ventana de la conexión, clicaremos en ella.
+
+  ![4](./img/acceso4.png)
+
+5. Al clicar ya nos conecta directamente y entramos de forma remota.
+
+  ![5](./img/acceso5.png)
 ___
 
 # 3. XAMPP
