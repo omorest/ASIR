@@ -129,9 +129,15 @@ ___
 
 Cuando hemos instalado todo se nos creara carpetas con los archivos de configuración y directorios.
 
+1. En la ruta `disco local C:/ programdata/ MySQL/ MySQL Server5.7` donde se encuentra el fichero my.ini que será dodne se guardan las modificaciones de opciones.
+
   ![3.4](./img/3.4.png)
 
+2. En la ruta `disco local C:/programdata/ MySQL/ MySQL Server5.7/data` se encontraran las bases de datos.
+
   ![3.5](./img/3.5.png)
+
+3. En la ruta `disco local C:/archivos de programa/ MySQL/ MySQL Server5.7/ bin` estarán los ejecutables.
 
   ![3.6](./img/3.6.png)
 
@@ -216,7 +222,7 @@ Pasos a seguir:
 
   ![php5](./img/php5.png)
 
-- Copiaremos todo y lo pegaremos en una ventana del *Workbench* .
+- Copiaremos todo y lo pegaremos en una ventana del *Workbench* y una vez pegado lo ejecutamos.
 
   ![php6](./img/php6.png)
 
