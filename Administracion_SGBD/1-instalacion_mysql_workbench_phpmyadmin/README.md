@@ -210,12 +210,7 @@ Pasos a seguir:
 
   ![php5](./img/php5.png)
 
-- Copiaremos todo y lo pegaremos en una ventana del *Workbench* . También dejaré el código por aqui para poder copiarlo también.
-
-~~~
-Código a copiar:
-
-~~~
+- Copiaremos todo y lo pegaremos en una ventana del *Workbench* .
 
   ![php6](./img/php6.png)
 
