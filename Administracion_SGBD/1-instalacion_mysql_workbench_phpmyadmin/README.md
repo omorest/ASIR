@@ -116,6 +116,12 @@ Una de las formas es ir a los servicios y ahi lo veremos.
 
 Una vez instalado el *MySQL community* lo abriremos para comprobar que esta todo correcto.
 
+  ![wk1](./img/wk1.png)
+
+También veremos que tenemos 3 bases de datos instaladas.
+
+  ![wk2](./img/wk2.png)
+
 
 ___
 
