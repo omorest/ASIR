@@ -56,7 +56,7 @@ ___
 
 ___
 
-# 2 Creación Zonas
+# 2. Creación Zonas
 
 Cuando creeemos las zonas ya estaremos configurando el servidor como servidor maestro.
 
