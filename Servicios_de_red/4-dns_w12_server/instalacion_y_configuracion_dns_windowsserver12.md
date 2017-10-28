@@ -48,19 +48,19 @@ Cuando lleguemos a un punto que se llame `seleccionar roles de servidor` en el q
 ___
 ___
 
-# 2. Configuración DNS
+# Configuración DNS
 
 - Para configurar el DNS iremos en el *administrador del servidor* al apartador `Herramientas` y entraremos en `DNS`.
 
-![1.6](./img/1.6.png)
+  ![1.6](./img/1.6.png)
 
 ___
 
-## 2.1 Creación Zonas
+# 2 Creación Zonas
 
 Cuando creeemos las zonas ya estaremos configurando el servidor como servidor maestro.
 
-### 2.1.1 Zona directa
+## 2.1 Zona directa
 
 - Una vez dentro de la herramienta de DNS del servidor empezaremos por crear una nueva zona directa.
 
@@ -94,7 +94,7 @@ Cuando creeemos las zonas ya estaremos configurando el servidor como servidor ma
 
 ___
 
-### 2.1.2 Creación Zona inversa
+## 2.2 Creación Zona inversa
 
 - Para la zona inversa haremos lo mismo que la directa, clicaremos botón derecho en `Zonas de búsqueda inversa` y crearemos una nueva zona.
 
