@@ -31,6 +31,8 @@ Realizar la instalación y configuración de un servidor DNS en una máquina con
 ___
 ___
 
+# Práctica
+
 # 1. Instalación DNS
 
 Lo primero que haremos será instalar el servicio DNS en caso de que no lo tengamos ya.
@@ -129,7 +131,7 @@ Ahora podremos ver que tenemos las dos zonas creadas.
 ___
 ___
 
-## 3. Reenviadores
+# 3. Reenviadores
 
 Cuando configuremos los reenviadores ya estaremos configurando el servidor como servidor Caché
 
@@ -146,7 +148,7 @@ Cuando configuremos los reenviadores ya estaremos configurando el servidor como 
   ___
   ___
 
-## 4. Configuración de zona directa
+# 4. Configuración de zona directa
 
 - Lo primero sera entrar dentro de la `zona directa` y clicar botón derecho en el panel blanco para crear `hosts`, `cname` o `servidor como correo`.
 
@@ -206,3 +208,109 @@ Cuando configuremos los reenviadores ya estaremos configurando el servidor como 
         3. Equipo para otro administrador.
 
             ![1.16.3](./img/1.16.3.png)
+
+        4. Veremos que los tenemos creado.
+
+            ![1.16.4](./img/1.16.4.png)
+
+  ___
+
+    - Comprbación de resolución de nombres.
+
+      - servidor:
+
+        ![1.18.0](./img/1.18.0.png)
+
+      - Servidor alias:
+
+        ![1.18.0.1](./img/1.18.0.1.png)
+
+      - Impresora:
+
+        ![1.18.1](./img/1.18.1.png)
+
+      - Correo:
+
+        ![1.18.2](./img/1.18.2.png)
+
+      - Impresora 2:
+
+        ![1.18.3](./img/1.18.3.png)
+
+      - FTP:
+
+        ![1.18.4](./img/1.18.4.png)
+
+      - Equipo para administrador:
+
+        ![1.18.5](./img/1.18.5.png)
+
+___
+___
+
+# 5. Cliente en el dominio
+
+- Iremos a un cliente al apartado de `propiedades` de `mi equipo` y le daremos a `cambiar configuración`.
+
+  ![1.19.0](./img/1.19.0.png)
+
+- Ahí dentro en entraremos en `cambiar` y ya dentro le pondremos un nombre al equipo y le pondremos que es miembro del: `dominio` moreiraserver.local en nuestro caso. y aceptaremos.
+
+  ![1.19.1](./img/1.19.1.png)
+
+- Si ahora vamos al servidor y entramos en la herramienta DNS y vamos a `moreiraserver.local` veremos que dentro de el esta un equipo llamado cliente que es el que acabamos de configurar.
+
+  > si no apararece el equipo al instante hay que actualizar.
+
+  ![1.19.2](./img/1.19.2.png)
+
+___
+___
+
+# 6. Resolución de nombres desde cliente.
+
+Desde el cliente abriremos la terminal ejecutaremos el comando nslookup y los nombres de los hosts creados:
+
+  - Servidor con alias:
+
+    ![1.20.0](./img/1.20.0.png)
+
+  - Impresora 1
+
+    ![1.20.1](./img/1.20.1.png)
+
+  - Correo:
+
+    ![1.20.2](./img/1.20.2.png)
+
+  - Impresora 2:
+
+    ![1.20.3](./img/1.20.3.png)
+
+  - FTP:
+
+    ![1.20.4](./img/1.20.4.png)
+
+  - Equipo para administrador:
+
+    ![1.20.5](./img/1.20.5.png)
+
+___
+___
+
+# 7. Resolución de dominios externos a nuestra red
+
+Haremos el mismo comando pero poniendo un dominio externo.
+
+- www.google.com
+
+  ![1.21.0](./img/1.21.0.png)
+
+- blog.iespuertodelacruz.com
+
+  ![1.21.1](./img/1.21.1.png)
+
+___
+___
+
+Fín de la práctica.
