@@ -56,6 +56,8 @@ ___
 
 ## 2.1 Creación Zonas
 
+Cuando creeemos las zonas ya estaremos configurando el servidor como servidor maestro.
+
 ### 2.1.1 Zona directa
 
 - Una vez dentro de la herramienta de DNS del servidor empezaremos por crear una nueva zona directa.
@@ -123,3 +125,84 @@ ___
 Ahora podremos ver que tenemos las dos zonas creadas.
 
 ![1.10.0](./img/1.10.0.png)
+
+___
+___
+
+## 3. Reenviadores
+
+Cuando configuremos los reenviadores ya estaremos configurando el servidor como servidor Caché
+
+- Para configurar los reenviadores tendremos que ir a las `propiedades` del servidor dns.
+
+  ![1.11.0](./img/1.11.0.png)
+
+- Una vez aquí dentro iremos a `Reenviadores` y clicaremos en editar y añadiremos los de google en nuestro caso.
+
+  ![1.11.1](./img/1.11.1.png)
+
+  ![1.11.2](./img/1.11.2.png)
+
+  ___
+  ___
+
+## 4. Configuración de zona directa
+
+- Lo primero sera entrar dentro de la `zona directa` y clicar botón derecho en el panel blanco para crear `hosts`, `cname` o `servidor como correo`.
+
+- Registros:
+
+  1. Servidor: Host para servidor y su alias.
+
+      - Crear `host nuevo` en el que pondremos dentro la IP de nuestro servidor y lo agregamos..
+
+        ![1.12.1](./img/1.12.1.png)
+
+      - Una vez creado el host del servidor ya podremos añadirle un nuevo alias en `nuevo alias CNAME`. Le pondremos un nombre.
+
+          ![1.13.0](./img/1.13.0.png)
+
+      - Luego le daremos a examinar y buscaremos nuestro host del servidor en la zona directa.
+
+        ![1.13.4](./img/1.13.4.png)
+
+      - Tal que al final quede así:
+
+        ![1.13.5](./img/1.13.5.png)
+
+  2. Impresora: host para Impresora
+
+      - Crear `host nuevo` y le pondremos de nombre *printer* con una IP
+
+        ![1.14.0](./img/1.14.0.png)
+
+  3. Servidor de correo: host para correo y correo de intercambio.
+
+      - Para crear un servidor de correro primero crearemos un `nuevo host`
+     con su IP y nombre.
+
+        ![1.15.0](./img/1.15.0.png)
+
+      -  Después de esto crearmos un nuevo `correo de intercambio` en el que examinaremos y eligiremos el host creado para el correo en la zona directa.
+
+          ![1.15.1](./img/1.15.1.png)
+
+  4. Subzona Servicios: servidor ftp, impresora 2, un equipo administrador.
+
+      - Para crear una nueva subzona clicaremos derecho como en los anteriores pasos y eligiremos `dominio nuevo`.
+
+        ![1.16.0](./img/1.16.0.png)
+
+      - Luego entraremos en el dominio servicios para crear los hosts que necesitamos.
+
+        1. FTP: host neuvo
+
+            ![1.16.2](./img/1.16.1.png)
+
+        2. Impresora 2: host nuevo
+
+            ![1.16.2](./img/1.16.2.png)
+
+        3. Equipo para otro administrador.
+
+            ![1.16.3](./img/1.16.3.png)
