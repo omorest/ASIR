@@ -63,3 +63,17 @@ Cuando la cambiemos comprobaremos con el comando: `ifconfig`.
 - Seguiremos con la configuración de los reenviadores en la que tendremos que ir al archivo en la ruta: `/etc/bind/name.conf.options` , y en ***forwarders*** pondremos los reenviadores que nosotros queramos, en nuestro caso usamos los de google.
 
   ![reenviadores](./img/4_forwarders.png)
+
+___
+
+## 1.2 Configuración cliente
+
+> En el cliente.
+
+- El primer paso que haremos en el cliente será ponerle como *dns* la IP de nuestro servidor.
+
+  ![ipdnsserver](./img/5_ip_client.png)
+
+- Luego iremos también al archivo resolv.conf en la ruta: `/etc/resolv.conf` y pondremos como *nameserver* la IP de nuestro servidor.
+
+  ![resolv.confclient](./img/5_resolv_client.png)
