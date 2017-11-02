@@ -58,7 +58,7 @@ Cuando la cambiemos comprobaremos con el comando: `ifconfig`.
 
   ![resolv.conf](./img/3_resolv_server.png)
 
-#### reenviadores
+#### Reenviadores
 
 - Seguiremos con la configuración de los reenviadores en la que tendremos que ir al archivo en la ruta: `/etc/bind/name.conf.options` , y en ***forwarders*** pondremos los reenviadores que nosotros queramos, en nuestro caso usamos los de google.
 
