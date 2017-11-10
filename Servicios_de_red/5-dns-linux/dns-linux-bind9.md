@@ -77,3 +77,79 @@ ___
 - Luego iremos también al archivo resolv.conf en la ruta: `/etc/resolv.conf` y pondremos como *nameserver* la IP de nuestro servidor.
 
   ![resolv.confclient](./img/5_resolv_client.png)
+
+> Desde el servidor
+
+- Ahora pasaremos al servidor a comprabar que funciona la resolución de nombres bien.
+
+  ![nslookupgoogle](./img/6_resolv_server.png)
+
+
+> Desde Cliente
+
+
+- Ahora desde el cliente comprobamos que también se resuelven nombres con el comando `nslookup`, en nuestro caso lo hicimos hacia *www.google.com* y *blog.iespuertodelacruz.es*.
+
+  ![nslookupgoogle](./img/6_nslookup_client.png)
+
+  - Veremos que nos da la IP del servidor que creamos y es el que nos da la respuesta.
+
+___
+
+
+## 1.3 Zona directa e inversa servidor
+
+> Desde el servidor
+
+- Ahora pasaremos a configurar la zona directa e inversa en el servidor.
+
+- En el servidor iremos al fichero `named.conf.local` que se encuentra en la ruta: `/etc/bind/named.conf.local`
+
+- En este fichero sera donde le digamos que habrá una zona directa y otra inversa.
+
+- Primero añadiremos la zona directa y luego la inversa como en las imagenes.
+
+  ![zona_directa](./img/7_zona_directa.png)
+
+  - Como vemos en la zona directa hemos puesto que hay un fichero llamado: *olivamoreira.db* que luego lo crearemos y modificaremos.
+
+  ![zona_inversa](./img/8_zona_inversa.png)
+
+  - En la zona inversa también hemos creado un fichero llamado: *172.rev* que crearemos luego y modificaremos.
+
+- Ahora iremos a la ruta:`/etc/bind/` y aqui dentro crearemos los ficheros *olivamoreira.db* y *172.rev* y dentro de estos habra una configuración similar a otros de la misma ruta, que seria *olivamoreira.db* con *db.local* y *172.rev* con *db.127*.
+
+  ![nslookupgoogle](./img/9_touch.png)
+
+- Copiaremos lo que hay dentro de uno y lo pondremos en los creados por nosotros.
+
+- Una vez lo copiemos haremos algunos cambios:
+
+  - olivamoreira.db:
+
+    - Añadiremos nuestro nombre de servidor y luego debajo de localhost como en la imagen añadiremos unos cuantos hosts.
+
+      ![olivamoreira.db](./img/10_bind_direct.png)
+
+
+  - 172.rev:
+
+    - Añadiremos nuestro nombre de servidor en la parte superior como en la directa y debajo de localhost enla parte inferior pondremos la red a la que pertenece al contrario:
+
+      ![172.rev](./img/11_bind_rev.png)
+
+___
+___
+
+# Comprobación final
+
+> Desde el cliente
+
+Ahora desde el cliente comprobaremos que sigue funcionando y que el cliente resuelve los nombres delos hosts creados en la zona.
+
+  ![checkclient](./img/12_check_client.png)
+
+___
+___
+
+Fín de la práctica.
