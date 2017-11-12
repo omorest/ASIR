@@ -94,3 +94,80 @@ ___
 ___
 
 # 2. Práctica 2
+
+En esta práctica lo primero que haremos será crear un subdominio  del dominio que ya tenemos y crear una zona nueva para asociarla despues a la principal.
+
+- Una vez creado los dominios nuevos, crearemos dos carpetas distinta una para cada subdominio. Creadas estas carpetas le daremos permisos al usuario IUSR
+
+  ![2.0](./img/2/2.0.png)
+
+- Cuando le demos los permisos a las carpetas para cada dominio nuevo iremos a `herramientas/iis`.
+
+- Una vez aquí dentro añadiremos un nuevo sitio web en el que le pondremos cual será su ruta a la carpeta y cual será su nombre de dominio.
+
+  ![2.1](./img/2/2.1.png)
+
+  ![2.2](./img/2/2.2.png)
+
+- Ahora veremos que tenemos los 3 sitios web.
+
+  ![2.3](./img/2/2.3.png)
+
+- Ahora comprobaremos que las 3 webs funcionan correctamente en el navegador con su index.html cada una.
+
+  ![2.4](./img/2/2.4.png)
+
+  ![2.5](./img/2/2.5.png)
+
+  ![2.6](./img/2/2.6.png)
+
+  ___
+  ___
+
+
+# 2. Práctica 3
+
+En esta práctica crearemos directorios virtuales de un dominio creado anterior mente de tal manera que podamos ver en forma de lista lo que hay dentro de una carpeta por navegador.
+
+- Lo primero sera crear una carpeta para meter las cosas dentro de lo queramos ver en el directorio virtual y dentro de esta 3 carpetas más que serán una web cada una con su *index.html*.En nuestro caso lo hemos hecho con la web que asociamos al principal.
+
+- Una vez creadas iremos a la herramienta IIS y clicaremos botón derecho en el sitio web llamado `webasociada` y eligiremos la opción `directorio virtual`, se nos abrirá una ventana en la que pondremos la dirección de la carpeta que creamos para el directorio virtual.
+
+  ![3.1](./img/3/3.1.png)
+
+- Hecho esto veremos como nos aparece ahora.
+
+  ![3.2](./img/3/3.2.png)
+
+- Ahora si vamos al navegador y buscamos en *oscarweb.com/virtual* que es nuestro dominio y la carpeta del directorio virtual que hemos creado veremos que nos lista lo que hay dentro.
+
+  ![3.3](./img/3/3.3.png)
+
+- Ahora para acabar comprobaremos desde un cliente que todas las web funcionan incluyendo las del directorio virtual entrando desde el listado.
+
+1. Web por defecto:
+
+    ![3.5](./img/3/3.5.png)
+
+2. Web subdominio_
+
+    ![3.7](./img/3/3.7.png)
+
+3. Web asociada al principal:
+
+    ![2.5](./img/2/2.5.png)
+
+4. Web asociada al principal directori virtual:
+
+    ![3.6](./img/3/3.6.png)
+
+    ![3.6.1](./img/3/3.6.1.png)
+
+    ![3.6.2](./img/3/3.6.2.png)
+
+    ![3.6.2](./img/3/3.6.2.png)
+
+___
+___
+
+Fín de la práctica
