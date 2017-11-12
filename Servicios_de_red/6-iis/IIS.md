@@ -20,3 +20,15 @@ Este informe consistirá en 3 prácticas de de instalación y configuración de 
 ___
 
 # Práctica 1
+
+En la práctica 1 lo primero que haremos será instalar el rol de IIS.
+
+- Iremos a `agregar roles y características` y una vez dentro en **selección de instalación** eligiremos `instalación basada en características o roles`.
+
+  ![1.1](./img/1/1.1.png)
+
+- Seguido eligiremos el servidor en el que vamos a instalar el rol y las características.
+
+  ![1.2](./img/1/1.2.png)
+
+- Después de haber elegido el servidor pasaremos a activar el rol de `servidor web (IIS)`, nos saldrá una ventana en la que clicaremos en `agregar características`.
