@@ -69,7 +69,7 @@ En la práctica 1 lo primero que haremos será instalar el rol de IIS.
 
   ![1.13](./img/1/1.13.png)
 
-## 1.3 Index dominios
+## 1.3 Index dominio principal
 
 - Para el dominio principal por defecto se crea una carpeta en la ruta: `C:\Inetpub\wwwroot` que será donde creemos nuestro index.html para la página por defecto de nuestro IIS.
 
