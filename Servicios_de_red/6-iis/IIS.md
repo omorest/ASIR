@@ -11,6 +11,8 @@ ___
 
 Este informe consistirá en 3 prácticas de de instalación y configuración de *IIS* en *Windows 12 Server*.
 
+- Practicas:
+
   **1.** Esta práctica consistirá en instalar IIS en Windows 12 Server, crear un host principal con un alias *www*, y un *index.html*
 
   **2.** En esta práctica deberemos crear dos nuevos sitios web, un subdominio y otro dominio asociado al principal (una nueva zona), estos dominios tendrán sus propias carpetas con sus *index.html* y lo que querramos en cada uno.
