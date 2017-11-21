@@ -17,7 +17,9 @@ Este informe consistirá en 2 prácticas de  configuraciónes con *IIS* en *Wind
 
   Una vez creados habra que darle el certificado ***SSL*** a los dos, a pagos se le dará un *certificado autofirmado* y a tienda se le dara un certificado con el programa *openssl*.
 
-  **2.** ...
+  **2.** Esta segunda práctica consistira en crear un nuevo sitio web llamado ***empleados.miempresa.com*** y en la carpeta que crearemos para él incluiremos otras 4 carpetas más que se llamarán empleado1,2,3 y común.Haremos un examen de directorios para poder visualizarlas.
+
+  Habrá que tener un index en cada una de ellas y crear usuarios para cada una de ellas y un grupo para común, de tal manera que al entrar a la web nos pida usuario y contraseña.
 
 ___
 ___
@@ -33,6 +35,10 @@ ___
 - Ahora en *IIS* creamos el sitio web ***miempresa.com*** y le indicaremos donde estara nuestra carpeta principal con su index.
 
   ![1.2](./img/1/1.2.png)
+
+- Dentro de esta carpeta de ***miempresa*** incluiremos dos más que serán las de los subdominios.
+
+  ![0-carpetas](./img/1/0.png)
 
 ## Pagos.miempresa.com
 
@@ -193,3 +199,145 @@ ___
 
 ___
 ___
+
+# Práctica 2
+
+## Sitio web empleados.miempresa.com
+
+- Lo primero que haremos será crear un dominio nuevo dentro de ***miempresa.com*** y con su host.
+
+![1.0](./img/2/1.0.png)
+
+- Después de crear nuestro nuevo dominio crearemos la carpeta ***empleados*** dentro de la carpeta ***miempresa***, y aparte crearemos dentro de esta las subcarpetas ***empleado1, 2, 3*** y ***común*** con un index en cada una.
+
+![1.1](./img/2/1.1.png)
+
+- Hecho esto iremos al *IIS* y crearemos el sitio web ***empleados.miempresa.com*** con la ubicación a la carpeta creada anteriormente.
+
+- Luego de esto iremos al sitio web ***empleados.miempresa.com*** y entraremos en `exámen de directorios` y lo habilitaremos.
+
+  ![1.2](./img/2/1.2.png)
+
+- De tal forma que si entras a la direccion *empleados.miempresa.com* veremos en forma de listado las carpetas web que tenemos dentro.
+
+  ![1.2.1](./img/2/1.2.1.png)
+
+___
+
+## Autenticación
+
+- Para la autenticación el primer paso será en *IIS* ir al servidor y ahí entraremos en `autenticación` y habilitaremos `autenticación básica`.
+
+ ![1.3](./img/2/1.3.png)
+
+- Ahora pasaremos a ir al sitio web ***empleados.miempresa.com*** en *IIS* y una vez dentro entraremos en `autenticación` y habilitaremos también `autenticación básica`
+
+ ![1.4](./img/2/1.4.png)
+
+- Hecho esto iremos por cada uno de las carpetas del sito web ***empleados.miempresa.com*** en *IIS* y desabilitaremos `autenticación anónima` de esta forma le obligamos a que no pueda entrar cualquier persona sin poner usuario y contraseña.
+
+  - Ejemplo con la carpeta común:
+    > Haremos esto que veremos en la imágen con todas las carpetas.
+
+    ![1.5](./img/2/1.5.png)
+
+___
+
+- Una vez terminado esto pasaremos a crear los usuarios que seran los que se podran entrar en cada uno de los sitios web.
+
+- Iremos a las herramientas del Servidor y entraremos en `Usuarios y equipos de Active Directory `.
+
+- Dentro crearemos los usuarios ***empleado1, 2, 3*** como veremos en la imágen con el ejemplo de la creación de *empleado1*.
+
+  > Hacer esto con los demas usuarios.
+
+  ![2.0](./img/2/2.0.png)
+
+- Ahora haremos lo mismo pero creando un grupo llamado ***común***.
+
+  ![2.1](./img/2/2.1.png)
+
+- Creado el grupo entraremos en sus propiedades y le añadiremos como miembros a los usuarios empleado creados anteriormente.
+
+  ![2.2](./img/2/2.2.png)
+
+___
+
+- Terminado esto pasaremos a darle los permisos a los usuarios en las carpetas de dichas webs.
+
+- Para esto empezaremos por la carpeta **común** y entraremos en `propiedades/seguridad` e iremos alos permisos y solo dejaremos al *Administrador* y al grupo *común*
+
+  ![3.1](./img/2/3.0.png)
+
+- Haremos lo mismo con las otras carpetas pero con los usuarios empleados, como veremos en el ejemplo de la siguiente imágen con la carpeta ***empleado1*** le daremos permisos solo al *Administrador* y *empleado1*.
+
+  > Haremos esto con las demas carpetas y usuarios.
+
+  ![3.1](./img/2/3.1.png)
+
+Con esto terminamos toda la configuración y pasaremos a comprobar que funciona.
+
+___
+
+## Comprobaciones desde Servidor.
+
+- **Web común**
+
+  > Para probar la web común solo mostramos el login con el usuario empleado1 para no repetir imágenes, pero funcionan todos los usuarios correctamente.
+
+  ![4.0.0](./img/2/4.0.0.png)
+
+  ![4.0.1](./img/2/4.0.1.png)
+
+- **Web empleado1**
+
+  ![4.1.1](./img/2/4.1.1.png)
+
+  ![4.1.2](./img/2/4.1.2.png)
+
+- **Web empleado2**
+
+  ![4.2.1](./img/2/4.2.1.png)
+
+  ![4.2.2](./img/2/4.2.2.png)
+
+- **Web empleado3**
+
+  ![4.3.1](./img/2/4.3.1.png)
+
+  ![4.3.1](./img/2/4.3.2.png)
+
+___
+
+## Comprobaciones desde Cliente.
+
+- **Web común**
+
+  > Aqui hemos puesto de ejemplo solo el login con empleado2
+
+  ![5.0.1](./img/2/5.0.1.png)
+
+  ![5.0.2](./img/2/5.0.2.png)
+
+- **Web empleado1**
+
+  ![5.1.1](./img/2/5.0.1.png)
+
+  ![5.1.2](./img/2/5.1.2.png)
+
+- **Web empleado2**
+
+  ![5.2.1](./img/2/5.2.1.png)
+
+  ![5.2.2](./img/2/5.2.2.png)
+
+- **Web empleado3**
+
+  ![5.3.1](./img/2/5.3.1.png)
+
+  ![5.3.2](./img/2/5.3.png)
+
+___
+___
+
+Fín de la práctica.
