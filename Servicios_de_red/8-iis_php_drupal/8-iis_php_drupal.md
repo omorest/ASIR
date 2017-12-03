@@ -17,7 +17,7 @@ ___
 
 # 1. Parte 1
 
-# 1.0 IIS Windows Server 2012 V
+## 1.0 IIS Windows Server 2012 V
 
 En este apartado instalaremos y configuraremos todas las características necesarias para nuestro servidor de tal forma que luego podremos trabajar desde el cliente y configurar desde el cliente.
 
@@ -73,9 +73,56 @@ En este apartado instalaremos y configuraremos todas las características necesa
 
   ![php version](./img/1/10_php_version.png)
 
+___
+
 ## 1.2 Instalación MySQL
 
 Para instalar el *MySQL* seguiremos los siguientes pasos:
 - Primero iremos a este [enlace](https://dev.mysql.com/donwloads/installer) y descargamos la segunda opción de 376.3M (instalador completo).
 
   ![download_mysql](./img/1/11_mysql_download.png)
+
+- Una vez descargado seguiremos los siguientes pasos para la instalación.
+
+  ![mysql](./img/1/12_mysql_installer_1.png)
+
+  ![mysql](./img/1/12_mysql_installer_2.png)
+
+  ![mysql](./img/1/13_mysql_config_1.png)
+
+  ![mysql](./img/1/13_mysql_config_2.png)
+
+  ![mysql](./img/1/13_mysql_config_3.png)
+
+  ![mysql](./img/1/13_mysql_config_4.png)
+
+  ![mysql](./img/1/13_mysql_config_5.png)
+
+- Y siguiente hasta acabar.
+
+## 1.3 phpMyAdmin
+
+- Descargaremos phpMyAdmin en este [enlace](http://www.phpmyadmin.net)
+
+  ![pma](./img/1/14_pma_download.png)
+
+- Crearemos una carpeta llamada phpmyadmin en *miempresa* con todos los ficheros.
+
+  ![pma](./img/1/14_pma_folder.png)
+
+- Ahora creamos un nuevo dominio para phpmyadmin
+
+  ![domini pma](./img/1/16_newalias_myadmin.png)
+
+- Creado el dominio crearemos el sitio web en *IIS*
+
+  ![web pma](./img/1/15_newsite_myadmin.png)
+
+- Ahora verificamos si entrando a la web nos sale la página.
+
+  ![pma check](./img/1/17_check_result.png)
+
+___
+___
+
+# Parte 2
