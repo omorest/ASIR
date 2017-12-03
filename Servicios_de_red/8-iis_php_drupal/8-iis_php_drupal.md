@@ -1,11 +1,77 @@
 # Informe IIS - Servidor Web avanzado - PHP, MySQL, phpMyAdmin, FTP y Drupal
 
 ![portada](./img/portada.jpg)
-# 1. IIS Windows Server 2012 V
+
+___
+
+# Prácticas
+
+### Parte 1:
+- La primera parte de la práctica consistirá en crear un servidor web con soporte PHP, acceso FTP y gestor de bases de datos y phpMyAdmin.
+
+### Parte 2:
+### Parte 3:
+
+___
+___
+
+# 1. Parte 1
+
+# 1.0 IIS Windows Server 2012 V
 
 En este apartado instalaremos y configuraremos todas las características necesarias para nuestro servidor de tal forma que luego podremos trabajar desde el cliente y configurar desde el cliente.
 
 ## 1.1 Instalación PHP
+
+- Lo primero que haremos será descargar PHP la versión 5.3.8
+
+  ![php_download](./img/1/1_php_download.png)
+
+- Descargado lo siguiente sera instalarlo y seguiremos los pasos que veremos en las imágenes siguientes.
+
+  ![php_install](./img/1/2_php_install_1.png)
+
+  ![php_install](./img/1/2_php_install_2.png)
+
+  ![php_install](./img/1/2_php_install_3.png)
+
+  ![php_install](./img/1/2_php_install_4.png)
+
+  ![php_install](./img/1/2_php_install_5.png)
+
+- Ahora añadiremos la carácterística llamada CGI en el servidor.
+
+  ![cgi](./img/1/3_add_cgi.png)
+
+  ![cgi](./img/1/4_cgi_added.png)
+
+- Una vez instalado el CGI pasaremos a crear nuestro sitio web y lo primero sera crear la carpeta llamada *cms*
+
+  ![cms folder](./img/1/6_cms_folder.png)
+
+- Dentro de esta carpeta crearemos un fichero *index.php* con el código siguiente dentro de él.
+
+  ~~~
+  <?php phpinfo(); ?>
+  ~~~
+
+  ![cms index](./img/1/6_cms_index.png)
+
+- Crearemos un alias.
+
+  ![new alias](./img/1/8_new_alias.png)
+
+- Despuñes de esto iremos a *IIS* y crearemos el sitio web *cms.miepresa.com*.
+
+  ![new site](./img/1/7_new_site.png)
+
+- Por último en el sitio web en *IIS* en documentos predeterminados pondremos el *index.php* al principio.
+
+  ![php up](./img/1/9_admit_php.png)
+
+- Ahora ya comprobaremso que entrando en nuestro sitio web en un navegador nos saldrá el contanido de PHP.
+
+  ![php version](./img/1/10_php_version.png)
 
 ## 1.2 Instalación MySQL
 
