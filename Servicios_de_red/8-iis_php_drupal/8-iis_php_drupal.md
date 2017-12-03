@@ -10,6 +10,7 @@ ___
 - La primera parte de la práctica consistirá en crear un servidor web con soporte PHP, acceso FTP y gestor de bases de datos y phpMyAdmin.
 
 ### Parte 2:
+- En esta segunda parte instalaremosy configuraremos un servidor FTP y el CMS llamado Drupal.
 ### Parte 3:
 
 ___
@@ -126,3 +127,134 @@ ___
 ___
 
 # Parte 2
+
+## 2.1 Filezilla
+
+> Desde servidor
+
+- Nuestro servidor ftp lo haremos con el programa *Filezilla*
+
+- Lo primero será descagar el Filezilla-server.
+
+  ![server Filezilla](./img/2/18_filezilla_down.png)
+
+- Luego lo instalamos
+
+  ![install Filezilla](./img/2/19_install.png)
+
+- Una vez dentro crearemos un usuario llamado *ftpuser*.
+
+  ![userftp](./img/2/20_user.png)
+
+- Luego añadiremos la carpeta de *cms* de nuestro servidor y le daremos todos los permisos.
+
+  ![permisos ftp](./img/2/21_user_permisos.png)
+
+- Después de esto crearemos un dominio ftp.miempresa.com.
+
+  ![dominio ftp](./img/2/22_ftp_site.png)
+
+___
+
+## 2.2 phpMyAdmin cliente
+
+> Desde cliente
+
+- Desde el cliente entramos em phpmyadmin.miempresa.com y verificamos que funciona.
+
+  ![phpmyadmin cliente](./img/2/23_php_client_1.png)
+
+  ![phpmyadmin cliente](./img/2/23_php_client_2.png)
+
+___
+
+## 2.3 Drupal
+
+- Descargaremos el CMS llamado Drupal.
+
+  ![drupal](./img/2/24_drupal_down.png)
+
+- Luego de esto entraremos en ftp.miempresa.com  y verificamso que podemos entrar al servidor ftp.
+
+  ![ftp user client](./img/2/25_ftp_user_1.png)
+
+  ![ftp user client](./img/2/25_ftp_user_2.png)
+
+- Ahora descargaremos el Filezilla client
+
+  ![Filezilla client](./img/2/26_filezilla_down.png)
+
+- Lo instalaremos
+
+  ![Filezilla client install](./img/2/26_filezilla_install.png)
+
+- Ahora desde el cliente transferiremos los archivos del Drupal descargados al servidor a la carpeta cms.
+
+  ![drupal to server](./img/2/27_transfer_druptal_to_server.png)
+
+- Ahora crearemos una base de datos en phpMyAdmin llamada cms.
+
+  ![bd cms](./img/2/28_new_db.png)
+
+- Ahora creamos un usuario para la base de datos con los privilegios necesarios.
+
+  ![bd user](./img/2/29_new_user_and_priviliges.png)
+
+- Si ahora entramos en la dirección *cms.miempresa.com* irems directamente a la instalación y configuración de Drupal.
+
+- Seguiremos los siguientes pasos.
+
+  ![drupal install](./img/2/30_config_drupal.png)
+
+  ![drupal install](./img/2/31_install_lengu.png)
+
+  ![drupal install](./img/2/32_link_lengu.png)
+
+  ![drupal install](./img/2/33_download_lengu.png)
+
+  ![drupal install](./img/2/34_folder_lengu.png)
+
+  ![drupal install](./img/2/35_select_lengu_esp.png)
+
+  ![drupal install](./img/2/36.1_error.png)
+
+  Con este error iremos al fichero crearemos un fichero llamado settings.php que sera una copia de default.settings.php y le daremos permisos a los usuarios parapoder modificar.
+
+  ![drupal install](./img/2/36.2_settings.png)
+
+  ![drupal install](./img/2/38_permisos.png)
+
+  Veremos que podemos seguir con la instalación.
+
+  ![drupal install](./img/2/39_tipo_db.png)
+
+  ![drupal install](./img/2/40_installing.png)
+
+  ![drupal install](./img/2/41_conf_site.png)
+
+- Ahora para poder usar bien Drupal sin errores iremos al fichero que se encuentra en `cms\sites\default\files` y le daremos permisos de modificación.
+
+  ![permiss files](./img/2/42_permisos_file.png)
+
+- Descargamos el tema marinelli para Drupal y lo subimos para usarlo en Drupal.
+
+  ![arinelli](./img/2/43_install_marinelli.png)
+
+- Luego de esto crearemos un artículo y un menu de link.
+
+  ![articulo](./img/2/46.1_new_articulo.png)
+
+  ![link](./img/2/47_new_menu.png)
+
+- Veremos que lo que hemos creado funciona.
+
+  ![web](./img/2/44_marinelli_tema.png)
+
+  ![web](./img/2/45_new_content.png)
+
+  ![web](./img/2/46.2_posted.png)
+
+___
+___
+
+# Parte 3
