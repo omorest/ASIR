@@ -1,3 +1,7 @@
+Oscar Moreira
+
+Carlos Oliva
+
 # Informe IIS - Servidor Web avanzado - PHP, MySQL, phpMyAdmin, FTP y Drupal
 
 ![portada](./img/portada.jpg)
@@ -11,7 +15,9 @@ ___
 
 ### Parte 2:
 - En esta segunda parte instalaremosy configuraremos un servidor FTP y el CMS llamado Drupal.
+
 ### Parte 3:
+- En esta parte lo que haremos sera por nuestra cuenta elegir un cms e instalarlo desde el cliente transfiriendolo al servidor.
 
 ___
 ___
@@ -258,3 +264,43 @@ ___
 ___
 
 # Parte 3
+En nuestro caso hemos elegido como CMS el Joomla.
+
+- Lo primero que haremos sera en la carpeta de mi empresa en el servidor crear otra dentro en la que alojaremos los ficheros de Joomla.
+
+- Desde ftp server compartiremos esa carpeta con todos los permisos para el usuario.
+
+  ![joomla](./img/3/48_moodle_1.png)
+
+- Crearemos un host
+
+  ![joomla](./img/3/48_moodle_2.png)
+
+- Después crearemos un sitio web en *IIS*
+
+  ![web joomla](./img/3/48_moodle_3.png)
+
+- Luego descargaremos el Joomla
+
+  ![joom down](./img/3/48_moodle_4.png)
+
+- Una vez descargado lo que haremos será instalarlo siguiendo los pasos que veremos en las imágenes.
+
+  ![joom install](./img/3/48_moodle_5.png)
+
+  ![joom install](./img/3/48_moodle_6.png)
+
+  ![joom install](./img/3/48_moodle_7.png)
+
+- Hecha la instalación iremos a la dirección creada para este apartado eingresaremos con el usuario y contraseña que creemos.
+
+  ![joom login](./img/3/48_moodle_8.png)
+
+- Si entramos veremos que tenemos todas las opciones para modificar la web.
+
+  ![joom ](./img/3/48_moodle_9.png)
+
+___
+___
+
+Fín de la práctica
