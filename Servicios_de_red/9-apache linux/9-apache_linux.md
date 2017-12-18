@@ -48,7 +48,7 @@ ___
 
 ___
 
-## Crear hosts virtuales.
+## 3. Crear hosts virtuales.
 
 En este apartada crearemos sitios web que configuraremos con apache2.
 
