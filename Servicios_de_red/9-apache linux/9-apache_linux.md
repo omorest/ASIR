@@ -70,4 +70,53 @@ En este apartada crearemos sitios web que configuraremos con apache2.
 
 ___
 
-## Sitios web seguros (SSL)
+## 4. Sitios web seguros (SSL)
+
+Ahora pasaremos a crear sitios web pero en este caso con certifiacion *SSL*
+
+- Una vez se instala *Apache* también se instala *SSL*.
+
+- Pasaremos a generar un certificado autofirmado. Ejecutaremos los siguientes comandos:
+
+  ~~~
+
+    - openssl genrsa -des3 -out server.key 1024
+    - openssl rsa -in server.key -out server.pem
+    - openssl req -new -key server.key -out server.csr
+    - openssl x509 -req -days 360 -in server.csr -signkey server.key -out server.crt
+
+  ~~~
+
+  ![12-serverkey](./img/12_server.key.png)
+
+  ![13-rsa-key](./img/13_rsa_key.png)
+
+  ![14-req-new-key](./img/14_req_new_key.png)
+
+  ![15-days](./img/15_days.png)
+
+- Ahora iremos al la ruta `/etc/apache2/sites-available/` y crearemos el virtual host `pagos.conf` con susconfiguración *SSL*.
+
+  ![16-sslpagos](./img/16_ssl.png)
+
+  ![17-server-pagos](./img/17_server_pagos.png)
+
+- Después de esto iremos a la ruta `/var/www/` y crearemos una carpeta llamada pagos en la que crearemos un *index.html*
+
+  ![19-index-pagos](./img/19_index_pagos.png)
+
+- Hecho todo esto lo añadiremos el nombre a `/etc/hosts`
+
+  ![20-pagos-hots](./img/20_pagos_on_hosts.png)
+
+- Cuando acabemos de configurar todo ejecutaremos el comando: `sudo a2enmod ssl` que sera el módulo que habilite el *SSL* en *Apache*.
+
+  ![21-a2enmod](./img/21_a2enmod.png)
+
+- Ahora verificamos que funciona la página.
+
+  ![21-result-pagos](./img/21_pagos_result.pmg)
+
+___
+
+## 5. Acceso a carpetas privadas.
