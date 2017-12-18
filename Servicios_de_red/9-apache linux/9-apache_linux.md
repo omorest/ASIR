@@ -115,7 +115,7 @@ Ahora pasaremos a crear sitios web pero en este caso con certifiacion *SSL*
 
 - Ahora verificamos que funciona la página.
 
-  ![21-result-pagos](./img/21_pagos_result.pmg)
+  ![21-result-pagos](./img/21_pagos_result.png)
 
 ___
 
