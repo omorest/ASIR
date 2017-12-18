@@ -45,3 +45,29 @@ ___
 - Ahora veremos que si entramos en *www.miempresa.com* nos saldra al index de *PHP*.
 
   ![php info](./img/7_php_info.png)
+
+___
+
+## Crear hosts virtuales.
+
+En este apartada crearemos sitios web que configuraremos con apache2.
+
+- Lo priemro que haremos será crear el virtual host de *www.empleados.miempresa.com* para esto iremos a la ruta `/etc/apache2/sites-available/` y crearemos un fichero que llamaremos ***empleados.conf***.
+
+  ![8-empelados.conf](./img/8_empleados.conf.png)
+
+- Luego iremos al fichero `/etc/hosts` y lo añadiremos.
+
+  ![9-hosts](./img/9_hosts.png)
+
+- Después de esto iremos a la ruta `/var/www/` y crearemos una carpeta llamada empleados y dentro un *index.html*.
+
+  ![10-INDEX.HTML](./img/10_index.png)
+
+- Ahora comprobaremos que el sitio web esta bien creado y que podemos acceder a la página.
+
+  ![11-result](./img/11_result.png)
+
+___
+
+## Sitios web seguros (SSL)
