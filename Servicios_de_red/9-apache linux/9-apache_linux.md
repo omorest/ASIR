@@ -56,6 +56,8 @@ En este apartada crearemos sitios web que configuraremos con apache2.
 
   ![8-empelados.conf](./img/8_empleados.conf.png)
 
+- Luego haremos un enlace simbólico a `/etc/apache2/sites-enabled`
+
 - Luego iremos al fichero `/etc/hosts` y lo añadiremos.
 
   ![9-hosts](./img/9_hosts.png)
@@ -101,6 +103,8 @@ Ahora pasaremos a crear sitios web pero en este caso con certifiacion *SSL*
 
   ![17-server-pagos](./img/17_server_pagos.png)
 
+- Luego haremos un enlace simbólico a `/etc/apache2/sites-enabled`
+
 - Después de esto iremos a la ruta `/var/www/` y crearemos una carpeta llamada pagos en la que crearemos un *index.html*
 
   ![19-index-pagos](./img/19_index_pagos.png)
@@ -113,10 +117,54 @@ Ahora pasaremos a crear sitios web pero en este caso con certifiacion *SSL*
 
   ![21-a2enmod](./img/21_a2enmod.png)
 
-- Ahora verificamos que funciona la página.
+- Ahora verificamos que funciona la página y que tendremos la certificación viendo que se muestra con *https*.
 
   ![21-result-pagos](./img/21_pagos_result.png)
 
 ___
 
 ## 5. Acceso a carpetas privadas.
+
+- Lo primero que haremos sera crear una carpeta en `/var/www/` llamada *privada*.
+
+- Una vez creada dentro de ella crearemos un fichero llamda `.htaccess`.
+
+  ![24_htaccess](./img/24_htaccess.png)
+
+- Despues de esto dentro de la ruta `/var` ejecutaremos el siguiente comando para crear una clave encriptada con el usuario: `sudo htpasswd -c /var/claves/usuario usuario`.
+
+  ![user y key](./img/25_new_user.png)
+
+- Ahora hecho esto iremos al fichero `/etc/hosts` y añadiremos la web con su IP
+
+  ![26](./img/26_hosts.png)
+
+- Dentro de la carpeta `/var/www/privada` crearemos un *index.html*
+
+  ![27 index](./img/27_index.png)
+
+- Hecho esto iremos a la ruta `/etc/apache2/sites-available` y crearemos el host de la web segura.
+
+  ![28 web segura conf](./img/28_websegura_conf.png)
+
+- Luego haremos un enlace simbólico a `/etc/apache2/sites-enabled`
+
+  ![29 ln-s](./img/29_ln-s.png)
+
+- Ahora entraremos en la página y veremos que nos pide usuario y contraseña y podremos entrar.
+
+  ![30-result](./img/30_result.png)
+
+  ![30_result2](./img/30_result_2.png)
+
+___
+
+## 6. MySQL
+
+- Instalararemos MySQL con: `sudi apt-get install mysql-server` y  en medio de la instalación pondremos contraseña para root de MySQL.
+
+  ![31-mysql](./img/31_install_mysql.png)
+
+- Una vez instalado pasaremos a instalr php para MySQL: `sudo apt-get install php-mysql`
+
+  ![32-php-mysql](./img/32_php_mysql.png)
