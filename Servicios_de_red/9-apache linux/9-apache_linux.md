@@ -1,3 +1,7 @@
+Óscar Moreira
+
+Carlos Oliva
+
 # Apache Linux
 
 ![portada](./img/portada.jpg)
@@ -168,3 +172,97 @@ ___
 - Una vez instalado pasaremos a instalr php para MySQL: `sudo apt-get install php-mysql`
 
   ![32-php-mysql](./img/32_php_mysql.png)
+
+
+___
+
+## 7. phpMyAdmin
+
+- Para descargar *phpMyAdmin*  lo que haremos será descargar el fichero tar.gz
+
+  ![33-down-phpmy](./img/33_down_phpmyadmin.png)
+
+- Luego lo descomprimimos y lo pasamos a la ruta `/var/www/`
+
+  ![35-move-to-www](./img/35_move_to_www.png)
+
+- Hecho esto crearemos una linea nueva en `/etc/host/` con el nombre *www.phpmyadmin.miempresa.com*
+
+  ![36-hosts](./img/36_hosts.png)
+
+- Crearemos un *phpmyadmin.conf* en `/etc/apache2/sites-available` y luego haremos un enlace simbolico en `/etc/apache2/sites-enabled`.
+
+  ![37-ln-s](./img/37_ln-s.png)
+
+- Ahora comprobaremos que funciona entrando en la página *www.phpmyadmin.miempresa.com*
+
+  ![38 result](./img/38_result.png)
+
+___
+
+## 8. Plataforma Wordpress
+
+### 8.1 Base de dats y usuarios
+
+- El primer paso que debemos realizar es crear un base de datos para *Wordpress*.
+
+- Para esto entraremos en *MySQL* y crearemos una base de datos llamada *wordpress*.
+
+  ![39 -new-databse](./img/39_new_database.png)
+
+- Luego iremos a *www.phpmyadmin.miempresa.com* y veremos que nos saldrá la base de datos que hemos creado.
+
+  ![40 wordpress in phpmyadmin](./img/40_wordpress_in_phpmyadmin.png)
+
+- Creada la base de datos pasaremos a crear un nuevo usuario.
+
+  ![41 new user](./img/41_new_user.png)
+
+### 8.2 Wordpress
+
+- Hecho todos los pasos anteriores pasaremos a descargar *Wordpress*.
+
+  ![42 download wordpress](./img/42_download_wordpress.png)
+
+- Ahora una vez descargado pasaremos la carpeta a la ruta `/var/www/`.
+
+  ![43 move wordpress](./img/43_move_wordpress.png)
+
+- Luego crearemos el fichero wordpress.conf en la ruta `/etc/apache2/sites-available`
+
+  ![44_wordpress_host.png](./img/44_wordpress_host.png)
+
+- Creado el fichero wordpress.conf  haremos un enlace simbólico en la ruta `/etc/apache2/sites-enabled`
+
+  ![45-ln-s](./img/45_ln-s.png)
+
+- Ahora crearemos una nueva linea con el nombre del host *www.wordpress.miempresa.com*
+
+  ![46 hosts](./img/46_hosts.png)
+
+- Hecho esto entraremos en la web *www.wordpress.miempresa.com*.
+
+  ![47 result](./img/47_result_wordpress.png)
+
+- Configuraremos wordpress diciendole la base de datos, usuario, etc...
+
+  ![48-wordpress-conf](./img/48_wordpress_conf.png)
+
+- Seguiremos configurandolo.
+
+  > Saldrá un error en la configuración del correo porque en realidad no existe pero nos deja seguir con la configuración.
+
+  ![49-wordpress](./img/49_installing_wordpress.png)
+
+- Terminado podremos acceder.
+
+  ![50 installed wordpress](./img/50_installed.png)
+
+- Ya hemos accedido y vemos el panel de control.
+
+  ![51_control_panel.png](./img/51_control_pannel.png)
+
+___
+___
+
+Fín de la práctica
