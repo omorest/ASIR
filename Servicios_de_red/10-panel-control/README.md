@@ -91,7 +91,7 @@ ___
 
 # 4. Webmin
 
-En este apartado explicaremos como descargar e instalar *Webmin* y también hacer alguna configuración.
+En este apartado explicaremos como descargar e instalar *Webmin* y también hacer alguna configuración y ajustes para hacer de ejemplo en la práctica.
 
 ## 4.1 Instalación Webmin
 
@@ -107,7 +107,7 @@ En este apartado explicaremos como descargar e instalar *Webmin* y también hace
 
   ![14 dependencias](./img/14-webmin-dependencias.png)
 
-- Ya instaladas las dependencias ahroa volveremos a ejecutar el comando de instalación.
+- Ya instaladas las dependencias ahora volveremos a ejecutar el comando de instalación.
 
   ![15 install webmin](./img/15-install-webmin.png)
 
@@ -115,4 +115,65 @@ Con esto ya lo tendremos instalado.
 
 ___
 
-## 4.2 Configuración Webmin
+## 4.2 Inicio Webmin
+
+- Para poder entrar al panel de control iremos a un navegador y pondremos la ruta https://localhost:10000 y dentro nos pedira usuario y contraseña que es el que estamos usando ahora mismo.
+
+  ![18 mywebmin](./img/18-mywebmin.png)
+
+- Una vez dentro nos saldrá un panel que nos dara información sobre el servidor.
+
+  ![17 webmin2](./img/17-webmin-2.png)
+
+___
+
+## 4.3 Configuraciones Webmin
+
+Estas configuraciones son para poner algún ejemplo de algo que se puede hacer desde un panel de control.
+
+- La primera configuración que haremos será cambiar el idioma.
+
+- Iremos al panel izquierdo a `Webmin --> Change your Language and Theme` y lo pondremos en español como en la imagen.
+
+  ![19 idioma webmin](./img/19-webmin-idioma.png)
+
+Con las siguientes imágenes que veremos se vera que el idioma está en español.
+
+___
+
+### 4.3.1 Configuración MySQL en Webmin.
+
+- Para entrar a MySQL en Webmin iremos al panel izquierdo y entraremos en `Servidores --> Servidor de Base de Datos MySQL`. Aquí veremos que tenemos 4 bases de datos.
+
+  ![20 MySQL](./img/20-mysql.png)
+
+- Para verificar que esta correcto abriremos una terminal y entraremos en MySQL y miramos las bases de datos que hay.
+
+  ![21 mysql](./img/21-mysql.png)
+
+- Vemos que son las mismas y esta bien.
+
+- Ahora pasaremos a crear una nueva Base de Datos en nuestro Servidor y le añadiremos una tabla.
+
+  > Esta base de dato tendra unos campos y su propio nombre, asi luego verificamos que todo funciona.
+
+  ![22 mysql base](./img/22-mysql-base.png)
+
+- Terminamos la creación y vemos que ya nos sale en el panel de control la nueva Base de Datos.
+
+  ![23 base](./img/23-base.png)
+
+- Ahora iremos a la terminal con MySQL y verificamos que la nueva Base de Datos nos sale y también su tabla.
+
+  ![24 MySQL](./img/24-mysql.png)
+
+- Y miramos dentro de la tabla que tengamos los campos puestos por webmin.
+
+  ![25 tabla](./img/25_tabla.png)
+
+Vemos que esta todo correcto.
+
+___
+___
+
+Fín de la Práctica
