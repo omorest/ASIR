@@ -76,7 +76,7 @@ ___
 
   ![install MySQL](./img/8-install-mysql.png)
 
-- En medio de la instlación nos pedira una contraseña ***root*** para *MySQL*.
+- En medio de la instalación nos pedira una contraseña ***root*** para *MySQL*.
 
   ![pass MySQL](./img/9-pass-mysql.png)
 
@@ -94,3 +94,25 @@ ___
 En este apartado explicaremos como descargar e instalar *Webmin* y también hacer alguna configuración.
 
 ## 4.1 Instalación Webmin
+
+- Iremos a la página http://www.webmin.com/download.html y descargaremos el que se señala en la imágen.
+
+  ![12 down webmin](./img/12-down-deb-webmin.png)
+
+- Después de esto con el comando `sudo dpkg -i webmin...` instalaremos webmin.
+
+  ![13 install webmin](./img/13-install-webmin-error.png)
+
+- Nos da este error porque faltan paquetes asique ahora ejecutaremos el comando: `sudo apt install -f` para que se instalen antes de volve a ejecutar el comando de instalación.
+
+  ![14 dependencias](./img/14-webmin-dependencias.png)
+
+- Ya instaladas las dependencias ahroa volveremos a ejecutar el comando de instalación.
+
+  ![15 install webmin](./img/15-install-webmin.png)
+
+Con esto ya lo tendremos instalado.
+
+___
+
+## 4.2 Configuración Webmin
