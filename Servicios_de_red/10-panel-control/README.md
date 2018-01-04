@@ -41,3 +41,33 @@ ___
 ___
 
 ## 2. PHP
+
+- Instalaremos *PHP* : `sudo apt install php`
+
+  ![install php](./img/4-install-php.png)
+
+- Una vez instalado pasaremos a instalar las librerías de *PHP* para *Apache*. `sudo apt install libapache2-mod-php`
+
+  ![librerias php](./img/5-libreria-php-apache.png)
+
+- Ahora pasaremos a crear un **index.php**, esto lo crearemos en la ruta por defecto `/var/www/html`, dentro habrá un index.html que le cambiaremos el nombre para que no lo detecte y crearemos el **index.php** ahi dentro.
+
+  - Contenido del index.php:
+
+    ~~~
+    <?php
+
+    phpinfo();
+
+    ?>
+    ~~~
+
+  ![index php](./img/6-index.php.png)
+
+- Ahora si entramos en ***localhost*** en el navegador veremos que ya no nos sale el index de apache y nos sale el **index.php** que acabamos de crear.
+
+  ![web php](./img/7-web-php.png)
+
+___
+
+## 3. MySQL
