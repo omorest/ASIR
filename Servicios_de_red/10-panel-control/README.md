@@ -24,7 +24,7 @@ Empezaremos teniendo instalado el sistema operativo *Ubuntu 16.04* y empezaremos
 
 ___
 
-## 1. Apache
+# 1. Apache
 
 - Lo primero que haremos será instalar *Apache* con el comando: `sudo apt install apache2`
 
@@ -40,7 +40,7 @@ ___
 
 ___
 
-## 2. PHP
+# 2. PHP
 
 - Instalaremos *PHP* : `sudo apt install php`
 
@@ -70,4 +70,27 @@ ___
 
 ___
 
-## 3. MySQL
+# 3. MySQL
+
+- Instalaremos *MySQL*: `sudo apt install mysql-server`
+
+  ![install MySQL](./img/8-install-mysql.png)
+
+- En medio de la instlación nos pedira una contraseña ***root*** para *MySQL*.
+
+  ![pass MySQL](./img/9-pass-mysql.png)
+
+  ![pass MySQL](./img/10-pass-mysql-2.png)
+
+- Por último instalaremos *PHP* para *MySQL*.
+
+  ![php MySQL](./img/11-php-mysql.png)
+
+___
+___
+
+# 4. Webmin
+
+En este apartado explicaremos como descargar e instalar *Webmin* y también hacer alguna configuración.
+
+## 4.1 Instalación Webmin
