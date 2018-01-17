@@ -115,3 +115,51 @@ ___
 ### FTP de todos los usuarios
 
 En este sitio el contenido sera `/inetpub/wwwroot` con acceso para todos los usuarios de Active Directory con permisos de escritura y lectura y con permitir SSL.
+
+- Creamos un nuevo sitio FTP
+
+- Ahora le daremos un nombre al sitio ftp y tambien elegiremos la ruta que tendra el contenido en este caso: `inetpub/wwwroot`
+
+  ![1 2sitio ftp](./img/windows/2/1.png)
+
+  ![2 2sitios ftp](./img/windows/2/2.png)
+
+- Pasaremos a la `Confifguración de enlaces y SSL` y le pondremos en `permitir SSL` y elegimos un certificado.
+
+  ![4 2sitio](./img/windows/2/4.png)
+
+- Luego en el siguiente paso eligiremos  autenticación básica y autorización a todos los usuarios.
+
+  ![5 2sitio](./img/windows/2/5.png)
+
+#### Comprobación
+
+- **Desde localhost:**
+
+  - Iremos a navegador o a la ruta en carpetas y pondremos : `ftp://localhost` esto nos pedirá una contraseña.
+
+    ![6 2sitio ftp](./img/windows/2/6.png)
+
+  - Entramos y veremos que nos sale todo el contenido de la ruta `/inetpub/wwwroot`:
+
+    ![7 2sitio ftp](./img/windows/2/7.png)
+
+- **Desde cliente windows 10:**
+
+  - Iremos a navegador o a la ruta en carpetas y pondremos : `ftp://IP_SERVIEOR` esto nos pedirá una contraseña.
+
+    ![8 2sitio ftp](./img/windows/2/8.png)
+
+  - Entramos y veremos que nos sale todo el contenido de la ruta `/inetpub/wwwroot`:
+
+    ![9 2sitio ftp](./img/windows/2/9.png)
+
+- **Desde WinSCP en cliente:**
+
+  - Entraremos en el programa y eligiremos protocolo *FTP* sin cifrado,la IP del servidor y el puerto 21.
+
+    ![10 2sitio ftp](./img/windows/2/10.png)  
+
+  - Entramos y veremos que nos sale todo el contenido de la ruta `/inetpub/wwwroot`:
+
+    ![13 sitio ftp](./img/windows/2/13.png) 
