@@ -109,3 +109,9 @@ Este sitio estara asociado a la unidad C: completa, y su usuario se llamará Adm
   - Veremos que nos salen todo el contenido del disco local C:
 
     ![19 sitio ftp](./img/windows/1/19.png)
+
+___
+
+### FTP de todos los usuarios
+
+En este sitio el contenido sera `/inetpub/wwwroot` con acceso para todos los usuarios de Active Directory con permisos de escritura y lectura y con permitir SSL.
