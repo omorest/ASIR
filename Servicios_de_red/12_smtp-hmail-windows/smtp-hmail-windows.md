@@ -183,3 +183,104 @@ ___
 # Hmail Windows Server 2012
 
 ![portada](./img/hmail/portada.png)
+
+___
+
+## 1. Desinstalar SMTP
+
+- Lo primero que haremos será desinstalar la característica SMTP, para esto iremos al panel principal --> `Administrar`-->`Quitar roles y funciones`.
+
+  ![1.0](./img/hmail/1.0.png)
+
+- Una vez dentro en el apartado de `características` desactivaremos `Servidor SMTP`
+
+  ![1.3](./img/hmail/1.3.png)
+
+  ![1.4](./img/hmail/1.4.png)
+
+- Y por último confirmamos.
+
+  ![1.5](./img/hmail/1.5.png)
+
+## 2. Instalación de servidor hMailServer
+
+- Para instalarlo lo primero será descargarlo, para esto iremos a este [enlace](https://www.hmailserver.com/donwload), y descargaremos la última versión.
+
+  ![2.0](./img/hmail/2.0.png)
+
+- Antes de comenzar a instalarlo activaremos una característica en el servidor llamada `.NET Framework 3.5`
+
+  ![2.9](./img/hmail/2.9.png)
+
+
+- Una vez descargado comenzaremos la instalación.
+
+  ![2.1](./img/hmail/2.1.png)
+
+  ![2.2](./img/hmail/2.2.png)
+
+  ![2.3](./img/hmail/2.3.png)
+
+  ![2.4](./img/hmail/2.4.png)
+
+  ![2.5](./img/hmail/2.5.png)
+
+  ![2.6](./img/hmail/2.6.png)
+
+  ![2.7](./img/hmail/2.7.png)
+
+  ![2.8](./img/hmail/2.8.png)
+
+- Una vez instalado pasaremos a ejecutarlo y veremos que nos pide una contraseña que será la que hemos puesto en la instalación.
+
+  ![2.10](./img/hmail/2.10.png)
+
+  ![2.10.0](./img/hmail/2.10.0.png)
+
+- Entrando en `localhost` y veremos que estaremos dentro ya del *hMailServer*
+
+  ![2.11](./img/hmail/2.11.png)
+
+## 3. Creación de dominios
+
+- Dentro de *hMailServer* iremos a `Domains` y añadiremos un nuevo dominio *srd.edu* y *asir.edu*.
+
+  ![3.0](./img/hmail/3.0.png)
+
+  ![3.1](./img/hmail/3.1.png)
+
+- De tal manera que al final nos quede así.
+
+  ![3.2](./img/hmail/3.2.png)
+
+## 4. Diagnóstico-Backup.
+
+- Realizaremos un diagnóstico, para esto iremos la última opción llamada `utilities` --> `Diagnostics` y haremos uno por cada dominio y veremos que nos falla un par de cosas, pero en este apartado nos fijamos en el de backup.
+
+  ![4.0](./img/hmail/4.0.png)
+
+  ![4.1](./img/hmail/4.1.png)
+
+- Para resolver esto iremos a la opción `utilities`-->`Backup` y eligiremos una carpeta para ello .
+
+  ![4.2](./img/hmail/4.2.png)
+
+- Veremos que si hacemos un nuevo diagnóstico ya no nos saldrá el error de Backup.
+
+  ![4.3](./img/hmail/4.3.png)
+
+  ![4.4](./img/hmail/4.4.png)
+
+## 5. Cuentas de usuario de dominio.
+
+- Para esto iremos a `Domains`-->`Accounts` y añadiremos una cuenta de usuario por cada dominio.
+
+- Cuenta para asir.edu:
+
+  ![5.0](./img/hmail/5.0.png)
+
+- Cuenta para srd.edu: a esta le añadiremos una opción llamda `auto-reply` que su funcion sera responder automaticamente mensajes.
+
+  ![5.2](./img/hmail/5.2.png)
+
+## 6. Servicio DNS MX. 
