@@ -283,4 +283,65 @@ ___
 
   ![5.2](./img/hmail/5.2.png)
 
-## 6. Servicio DNS MX. 
+## 6. Servicio DNS MX.
+
+- Para crearlos iremos al `Administrador de DNS` y crearemos dos zonas nuevas una llamada **srd.edu** y otra llamada **asir.edu**.
+
+- Una vez creadas iremos a cada una y crearemos un host llamado mail y un *MX* asociado a él. de tal manera que quede así.
+
+  ![6.0](./img/hmail/6.0.png)
+
+  ![6.1](./img/hmail/6.1.png)
+
+## 7. Opciones extra.
+
+- En mi caso como opción extraña añadí el `auto-reply` en el dominio **srd.edu** como hemos visto antes y también la opción `Forwarding` en el dominio **asir.edu**.
+
+  ![7.0](./img/hmail/7.0.png)
+
+- Esto hará que reenvie el mensaje a otro correo que queramos.
+
+## 8. Cliente en Windows.
+
+- El cliente que usaremos nosotros en Windows 10  será el llamada **OperaMail**
+
+## 9. Envío y recepción de correos entre usuarios.
+
+- Para esto desde el **OperaMail** con el usuario *ASIr* le enviaremos un correo al usuario *SRD* y viceversa.
+
+  ![9.0](./img/hmail/9.0.png)
+
+  - Veremos que el usuario *SRD* contesta automáticamente el mensaje gracias a la opción `auto-reply`.
+
+    ![9.1](./img/hmail/9.1.png)
+
+  - Vemos que recibimos los mensajes también.
+
+    ![9.2](./img/hmail/9.2.png)
+
+## 10. Listas de distribución.
+
+- Con las listas de distribución podemos enviar un correo a una lista de contactos que tengamos en una lista.
+
+- Para esto crearemos varios usuario en un dominio dentro del *hMailServer* y crearemos una `Distribution lists` le pondremos un nombre y en modo público de tal manera que cualqueira pueda mandarle el correo a toda la lista de contactos.
+
+  ![10.0](./img/hmail/10.0.png)
+
+- Luego de esto iremos a `Memebers` y añadiremos los usuarios creados en el dominio.
+
+  ![10.1](./img/hmail/10.1.png)
+
+## 11. Envío correo a lista de distribución.
+
+- Para enviar un correo a todos esos usuarios lo que haremos será enviar un correo al nombre de la lista.
+
+  ![11.0](./img/hmail/11.0.png)
+
+- Vemos que hemos recibido varios ya que es recibido por diferentes cuentas.
+
+  ![11.1](./img/hmail/11.1.png)
+
+___
+___
+
+Fín de la práctica
