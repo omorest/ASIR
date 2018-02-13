@@ -72,4 +72,83 @@ Carlos Oliva
 
     ![18](./img/18_check.png)
 
+___
+
 ## 2. Imap y SquirrelMail
+
+###2.1 IMAP
+
+- Lo primero instalaremos el servicio IMAP : `apt install imapd`.
+
+  ![19](./img/19_dovecot_install.png)
+
+- Comprobamos que el servicio esta corriendo bien.
+
+  ![20](./img/20_status_dovecot.png)
+
+  - `netstat -utap`
+
+    ![21](./img/21_netstat.png)
+
+### 2.2 SquirrelMail
+
+- Ahora instalaremos la aplicación de correo *SquirrelMail*.
+
+  ![22](./img/22_install_squirrel.png)
+
+- Enla ruta `/usr/share/squirrelmail` se encuentra la carpeta de aplicación.
+
+  ![24](./img/24_squirrel_app_folder.png)
+
+- Ahora iremos a la carpeta de configuración `/etc/squirrelmail`
+
+- Una vez dentro copiaremos el contenido del fichero `apache.conf` y crearemos un host virtual nuesvo en `/etc/apache2/sites-available`, lo habilitamos y reiniciamos el servicio.
+
+  ![23](./img/23_squirrel_conf_folder.png)
+
+  ![25](./img/25_site.conf.png)
+
+  ![26](./img/26_symb_link.png)
+
+- Hecho esto pasaremos a comprobar que ha funcionado.
+
+- Accedemos via http a `localhost/squirrelmail`
+
+  ![27](./img/27_log_squirrel.png)
+
+- Nos logueamos con un usuario de los creados anteriormente.
+
+- Ahora veremos que estando dentro que tenemos uno de los correo que hemos enviado anrteriormente a carlos.
+
+  ![28](./img/28_check_user_carlos.png)
+
+  ![29](./img/29_check_user_carlos.png)
+
+- Y comprobamos con el usuario oscar también.
+
+  ![31](./img/31_check_user_osar.png)
+
+  ![32](./img/32_check_user_oscar.png)
+
+- Ahora probaremos a enviar mensajes desde *SquirrelMail*.
+  - A usuario oscar:
+
+    ![33](./img/33_to_send.png)
+
+    ![34](./img/34_mail_recibido.png)
+
+  - A usuario carlos:
+
+    ![35](./img/35_to_send.png)
+
+    ![36](./img/36_mail_recibido.png)
+
+- Tmabién comprobaremos que se han recibido en la ruta `/var/mail`
+
+  ![37](./img/37_check_varmail.png)
+
+  ![38](./img/38_chec_varmail.png)
+
+___
+
+## 3. Servicio POP3
