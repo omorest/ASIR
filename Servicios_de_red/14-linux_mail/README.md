@@ -76,7 +76,7 @@ ___
 
 ## 2. Imap y SquirrelMail
 
-###2.1 IMAP
+### 2.1 IMAP
 
 - Lo primero instalaremos el servicio IMAP : `apt install imapd`.
 
@@ -126,7 +126,7 @@ ___
 
 - Y comprobamos con el usuario oscar también.
 
-  ![31](./img/31_check_user_osar.png)
+  ![31](./img/31_check_user_oscar.png)
 
   ![32](./img/32_check_user_oscar.png)
 
@@ -147,7 +147,7 @@ ___
 
   ![37](./img/37_check_varmail.png)
 
-  ![38](./img/38_chec_varmail.png)
+  ![38](./img/38_check_varmail.png)
 
 ___
 
