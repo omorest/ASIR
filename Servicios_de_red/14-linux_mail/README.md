@@ -190,9 +190,9 @@ ___
 
 - Por último en la ruta `/var/mail` no deberiamos recibir los correos pero los hemos recibido y a todos los alumnos nos ha ocurrido igual.
 
-  ![50](./img/50_check.varmail.png)
+  ![50](./img/50_check_varmail.png)
 
-  ![51](./img/51_check.varmail.png)
+  ![51](./img/51_check_varmail.png)
 
 ___
 ___
