@@ -152,3 +152,49 @@ ___
 ___
 
 ## 3. Servicio POP3
+
+- Instalaremos el servicio *POP3*: `apt install dovecot-pop3d`
+
+  ![40](./img/40_install_pop3.png)
+
+- Comprobamos que el servicio esta funcionando bien.
+
+  ![41](./img/41_status.png)
+
+  - `netstat -utap`
+
+    ![42](./img/42_netstat.png)
+
+- Ahora configuramos nuestro cliente de correo *OperaMail* para que acceda a la recepción de un correo a través del protocolo *POP3*.
+
+  ![43](./img/43_server_opera.png)
+
+- Veremos que tenemos los dos usuarios de correo con el POP activado.
+
+  ![44](./img/44_admin_acc.png)
+
+
+- Ahora comprobamos que funciona enviando un correo a través del cliente.
+
+- Enviamos un correo de Carlos a Oscar.
+
+  ![45](./img/45_envio_a_oscar.png)
+
+- Vemos que lo recibimos.
+
+    ![53](./img/53_check_oscar.png)
+
+- Hemos enviado otro de Oscar a Carlos y vemos que lo recibimos también.
+
+  ![54](./img/54_check_carlos.png)
+
+- Por último en la ruta `/var/mail` no deberiamos recibir los correos pero los hemos recibido y a todos los alumnos nos ha ocurrido igual.
+
+  ![50](./img/50_check.varmail.png)
+
+  ![51](./img/51_check.varmail.png)
+
+___
+___
+
+Fín de la práctica
