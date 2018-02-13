@@ -46,7 +46,7 @@ Carlos Oliva
 
   ![10](./img/10_hosts.png)
 
-  ![11](./img/11_hosts_cli)  
+  ![11](./img/11_hosts_cli.png)  
 
 - Comprobamos haciendo ping a un dns para verificar que hace conexión.
 
