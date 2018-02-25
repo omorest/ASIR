@@ -90,3 +90,48 @@ ___
 ![26](./img/26.png)
 
 ![27](./img/27.png)
+
+___
+___
+
+# 2. Instalación y configuración de un Servidor Multimedia-Codificación de contenidos propios.
+
+- Lo primero que haremos será descargar e instalar *Microsoft Expression Encoder*.
+
+  ![28](./img/28.png)
+
+  ![29](./img/29.png)
+
+- para que funcione bien debemosactivar la característica en el servidor de *experiencia de Escritorio*.
+
+  ![30](,/img/30.png)
+
+- Creamos un nuevo dominio llamado *playlist.streaming.com*
+
+  ![36](./img/36.png)
+
+- Ahora pasamos a crear el sitio web indicando la ruta a la carpeta donde se encontrarán los archivos.
+
+  ![31](./img/31.png)
+
+- En el sitio en el documento predeterminado pondremos el *default.html* primero.
+
+  ![37](./img/37.png)
+
+- Hecho esto pasamos a crear un nuevo proyecto en *microsoft experiencia Encoder* y elegimos *proyecto Silverlight*.
+
+  ![32](./img/32.png)
+
+- Ahora dentro del proyecto metemos el video que queremos codificar y lo codificamos.
+
+  ![33](./img/33.png)
+
+  ![34](./img/34.png)
+
+- El video debe ser exportado a la misma carpeta de la ruta indicada.
+
+  ![35](./img/35.png)
+
+Ahora comprobamos que funciona entrando en un navegador en el dominio indicado.
+
+  ![38](./img/38.png)
