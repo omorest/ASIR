@@ -102,9 +102,9 @@ ___
 
   ![29](./img/29.png)
 
-- para que funcione bien debemosactivar la característica en el servidor de *experiencia de Escritorio*.
+- Para que funcione bien debemosactivar la característica en el servidor de *experiencia de Escritorio*.
 
-  ![30](,/img/30.png)
+  ![30](./img/30.png)
 
 - Creamos un nuevo dominio llamado *playlist.streaming.com*
 
@@ -135,3 +135,8 @@ ___
 Ahora comprobamos que funciona entrando en un navegador en el dominio indicado.
 
   ![38](./img/38.png)
+
+___
+___
+
+Fín de la práctica
