@@ -4,6 +4,8 @@ Carlos Oliva
 
 # Instalación y configuración del servicio VoIP
 
+  ![portada](./img/portada.png)
+
 Nosotros hemos usado para esta práctica la herramienta llamada *Elastix*.
 
 ## 1. Instalación Elastix
@@ -109,3 +111,40 @@ ___
 - En linux para instalarlo solo tendremos que ir a la aplicación de software e instalar `softphone Ekiga`.
 
   ![23](./img/23.png)
+
+- Una vez instalado nos saldrá esta ventana.
+
+  ![24](./img/24.png)
+
+- Ahora editaremos la cuenta y le pondremos un nomvre y un usuario que pertenece al creado anteriormente.
+
+  ![25](./img/25.png)
+
+- Hecho esto vemos que ya esta registrado.
+
+  ![26](./img/26.png)
+
+## 4. Comprobación
+
+- Ahora veremos que tenemos dos clientes para hacer la llamada uno con el usuario carlos y otro oscar.
+
+  ![27](./img/27.png)
+
+  ![28](./img/28.png)
+
+- Ahora desde el usuario de Oscar llamaremos a Carlos.
+
+  ![29](./img/29.png)
+
+- Vemos que la llamada se esta haciendo.
+
+  ![30](./img/30.png)
+
+- Una vez coja la llamada se verá así.
+
+  ![31](./img/31.png)
+
+___
+___
+
+Fín de la práctica.
