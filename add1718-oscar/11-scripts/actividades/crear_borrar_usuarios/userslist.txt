@@ -1,0 +1,3 @@
+juan:moreira:juan@gmail.com:3/11/1995:add
+carlos:oliva:oliva@gmail.com:8/6/1990:delete
+alba:garcia::8/6/1990:add
